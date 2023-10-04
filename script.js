@@ -1,8 +1,8 @@
-document.getElementById('menu-icon').addEventListener('click', function() {
-    var navbar = document.getElementById('navbar');
-    if (navbar.style.display === 'block') {
-        navbar.style.display = 'none';
-    } else {
-        navbar.style.display = 'block';
-    }
+document.querySelectorAll('#navbar a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
 });
