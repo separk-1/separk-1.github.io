@@ -93,3 +93,8 @@ footer {
 section {
     padding: 60px 20px;
 }
+
+i.fas, i.fab {
+    color: #007bb5;  /* LinkedIn의 브랜드 색상 */
+    margin-right: 8px;  /* 아이콘과 텍스트 사이의 간격 */
+}
