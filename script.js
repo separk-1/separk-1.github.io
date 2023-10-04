@@ -6,7 +6,3 @@ document.querySelectorAll('#navbar a').forEach(anchor => {
         });
     });
 });
-
-document.getElementById('business-card').addEventListener('click', function() {
-    this.classList.toggle('spinning');
-});
