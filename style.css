@@ -26,6 +26,15 @@ header p {
 
 }
 
+
+section {
+    background-color: #f8f8f8;  /* 배경색 */
+    margin: 20px 0;  /* 상하 마진 */
+    padding: 20px;  /* 패딩 */
+    border-radius: 8px;  /* 모서리 둥글게 */
+}
+
+
 h2 {
     color: #333;
     font-size: 1.5em;
@@ -90,10 +99,6 @@ footer {
     color: black;
 }
 
-section {
-    padding: 60px 20px;
-}
-
 i.fas, i.fab {
     color: #333;  /* LinkedIn의 브랜드 색상 */
     margin-right: 8px;  /* 아이콘과 텍스트 사이의 간격 */
@@ -156,19 +161,4 @@ i.fas, i.fab {
         display: block;  /* 햄버거 메뉴 아이콘을 표시합니다 */
         cursor: pointer;
     }
-}
-
-section {
-    background-color: #f8f8f8;  /* 배경색 */
-    margin: 20px 0;  /* 상하 마진 */
-    padding: 20px;  /* 패딩 */
-    border-radius: 8px;  /* 모서리 둥글게 */
-}
-
-h2 {
-    color: #333;  /* 제목 색상 */
-}
-
-p, ul {
-    color: #666;  /* 본문 및 목록 색상 */
 }
