@@ -103,3 +103,15 @@ i.fab {
     color: #007bb5;  /* LinkedIn의 브랜드 색상 */
     margin-right: 8px;  /* 아이콘과 텍스트 사이의 간격 */
 }
+
+.profile-container {
+    display: flex;
+    align-items: center;
+}
+
+.profile-image {
+    border-radius: 50%;
+    margin-right: 20px;
+    width: 150px;
+    height: 150px;
+}
