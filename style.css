@@ -8,17 +8,16 @@ body {
 header {
     background-color: #4C6375;
     color: #F8F8F8;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
 }
 
-header h1 {
-    margin: 0;
-}
-
-header p {
-    margin: 5px 0;
-    font-weight: bold;
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
 }
 
 section {
@@ -48,3 +47,23 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+/* Additional Styling */
+header h1, header p {
+    margin: 5px 0;
+}
+
+section p, section ul {
+    margin: 5px 0 15px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Add your additional styling below */
