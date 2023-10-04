@@ -55,3 +55,44 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
+#menu-icon {
+    font-size: 1.5em;
+    cursor: pointer;
+    display: none; /* 기본적으로 메뉴 아이콘은 숨김 상태 */
+}
+
+#navbar {
+    display: none;
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar li {
+    margin-bottom: 0;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #4C6375;
+}
+
+@media screen and (max-width: 768px) {
+    #menu-icon {
+        display: block; /* 모바일 뷰에서 메뉴 아이콘 표시 */
+    }
+
+    #navbar ul {
+        text-align: center;
+        background-color: #f8f8f8;
+    }
+
+    #navbar li {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+}
