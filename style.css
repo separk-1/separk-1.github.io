@@ -48,7 +48,7 @@ li {
 }
 
 footer {
-    background-color: #030569d7;
+    background-color: #0e0c32;
     color: #F8F8F8;
     text-align: center;
     padding: 10px 20px;
@@ -88,7 +88,7 @@ footer {
 
 #navbar a {
     text-decoration: none;
-    color: #4C6375;
+    color: #0e0c32;
 }
 
 @media screen and (max-width: 768px) {
