@@ -6,3 +6,14 @@ document.querySelectorAll('#navbar a').forEach(anchor => {
         });
     });
 });
+
+document.querySelector('.menu-icon').addEventListener('click', function() {
+    var navItems = document.querySelectorAll('nav li');
+    for (var i = 1; i < navItems.length; i++) {  // 첫 번째 항목(햄버거 메뉴)을 제외하고 순회
+        if (navItems[i].style.display === 'block') {
+            navItems[i].style.display = 'none';
+        } else {
+            navItems[i].style.display = 'block';
+        }
+    }
+});

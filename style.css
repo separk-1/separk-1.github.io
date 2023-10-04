@@ -145,3 +145,15 @@ i.fas, i.fab {
         height: auto;
     }
 }
+
+/* 모바일 환경에서의 스타일 */
+@media only screen and (max-width: 600px) {
+    nav li {
+        display: none;  /* 기본적으로 메뉴 항목을 숨깁니다 */
+    }
+
+    nav .menu-icon {
+        display: block;  /* 햄버거 메뉴 아이콘을 표시합니다 */
+        cursor: pointer;
+    }
+}
