@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: #0e0c32;
+    background-color: #333;
     color: #F8F8F8;
     padding: 10px 20px;
     text-align: center;
@@ -27,7 +27,7 @@ header p {
 }
 
 h2 {
-    color: #0e0c32;
+    color: #333;
     font-size: 1.5em;
 }
 
@@ -50,7 +50,7 @@ li {
 }
 
 footer {
-    background-color: #0e0c32;
+    background-color: #333;
     color: #F8F8F8;
     text-align: center;
     padding: 10px 20px;
