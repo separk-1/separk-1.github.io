@@ -12,6 +12,7 @@ header {
     color: #F8F8F8;
     padding: 10px 20px;
     text-align: center;
+    padding-top: 50px;  /* 메뉴 아이콘 공간 확보를 위한 패딩 추가 */
 }
 
 header h1 {
@@ -57,11 +58,13 @@ footer {
 }
 
 #menu-icon {
-    font-size: 1.5em;
-    cursor: pointer;
-    display: none; /* 기본적으로 메뉴 아이콘은 숨김 상태 */
+    font-size: 30px;
+    position: fixed;  /* 메뉴 아이콘을 화면에 고정 */
+    top: 15px;  /* 상단에서 15px 떨어진 위치에 배치 */
+    left: 15px;  /* 왼쪽에서 15px 떨어진 위치에 배치 */
+    cursor: pointer;  /* 마우스 커서를 포인터로 변경 */
+    z-index: 1001;  /* 다른 요소 위에 표시되도록 z-index 설정 */
 }
-
 #navbar {
     display: none;
 }
@@ -73,6 +76,7 @@ footer {
     max-height: 0;  /* 초기 높이를 0으로 설정 */
     overflow: hidden;  /* 내용이 넘칠 경우 숨김 */
     transition: max-height 0.5s ease-out;  /* 애니메이션 효과 추가 */
+    top: 50px;  /* 메뉴 아이콘 아래에 위치하도록 top 값을 조절 */
 }
 
 #navbar li {
