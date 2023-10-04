@@ -11,6 +11,36 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* 모바일 화면 크기에 대한 스타일 */
+        @media (max-width: 768px) {
+            body {
+                font-size: 16px; /* 모바일 화면용 글꼴 크기 설정 */
+            }
+
+            /* 네비게이션 메뉴 아이템 스타일 조정 */
+            #navbar ul {
+                text-align: center;
+                padding: 0;
+            }
+
+            #navbar ul li {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            /* 프로필 이미지 스타일 조정 */
+            .profile-image {
+                max-width: 100%;
+                display: block;
+                margin: 0 auto;
+            }
+
+            /* 다른 요소들에 필요한 스타일 조정 */
+            /* 추가적인 모바일 스타일을 필요에 따라 작성하세요 */
+        }
+    </style>
 </head>
 <body>
     <nav id="navbar">
@@ -30,8 +60,11 @@
             <img src="hb.jpg" alt="Seongeun Park" class="profile-image">
         </div>
         <p>
-        Hello, I'm deeply interested in the application of deep learning in construction automation.</p>
-        <p>I am currently researching methods to bridge the gap between laboratory and real sites through data generation and domain adaptation.</p>
+            Hello, I'm deeply interested in the application of deep learning in construction automation.
+        </p>
+        <p>
+            I am currently researching methods to bridge the gap between laboratory and real sites through data generation and domain adaptation.
+        </p>
         <p>
             <a href="mailto:seongeunpark@snu.ac.kr" title="Email me"><i class="fas fa-envelope fa-2x"></i></a>
             <a href="https://github.com/separk-1" target="_blank" title="GitHub"><i class="fab fa-github fa-2x"></i></a>
@@ -57,43 +90,3 @@
             </li>
         </ul>
     </section>
-    
-
-    <section id="education">
-        <h2>Education</h2>
-        <h3>Master of Architectural Engineering</h3>
-        <p>Mar. 2021 – Feb. 2023, Seoul National University
-        <a href="https://cem.snu.ac.kr/" target="_blank">(SNUCEM)</a></p>
-    
-        
-        <h3>Bachelor of Architectural Engineering</h3>
-        <p>Mar. 2010 – Feb. 2017, Kyung Hee University</p>
-    </section>
-
-    <section id="publication">
-        <h2>Publication</h2>
-        <p>(Under Review) Park, S., Lee, H., Park, M., Ahn, C. R. (2023) Human-Independent Activity Recognition in Construction based on Variational Autoencoder and Wearable Motion Sensors</p>
-        <p>(Under Review) Jung, G., Jung, M., Park, S., Park, M., Ahn, C. R. (2023). Contextual Multimodal Approach for Recognizing the Concurrent Activities of Equipment Vehicles in Tunnel Construction Projects</p>
-        <p>(Under Review) bh</p>
-        <p>Lee, H., Lee, G., Park, S., Lee, S., Jacobs, J. V., & Ahn, C. R. (2023). Collective Sensing of Workers’ Loss of Body Balance for Slip, Trip, and Fall Hazard Identification: Field Validation Study. Journal of Computing in Civil Engineering, 37(1), 04022052.</p>
-        <p>Park, S., Lee, H., Ahn, C. R., & Park, M. (2023, July). Human-independent activity recognition of construction worker. In EC3 Conference 2023 (Vol. 4, pp. 0-0). European Council on Computing in Construction.</p>
-        <p>Kim, J., Yoon, I., Jung, M., Joo, S., Park, S., Hong, Y., ... & Park, M. (2022). Establishment of Measurement Standards for Productivity Assessment in Construction Project. Korean Journal of Construction Engineering and Management, 23(3), 3-12.</p>
-     </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li>(2022-2023) Smart Construction AI Research Center, Seoul National University</li>
-            <li>(2021-2023) Automated Cycle-Time Measurement Method for NATM-based Tunnel Construction using DeepNeural Network, Obayashi Corp.</li>
-            <li>(2021) Establishing Productivity Standards for Semiconductor Construction Projects, Samsung</li>
-        </ul>
-    </section>
-    
-    <section id="experience">
-        <h2>Experience</h2>
-        <!-- Add your work experience details here. For example: positions, companies, duration, responsibilities, etc. -->
-    </section>
-
-    <script src="script.js"></script>
-</body>
-</html>
