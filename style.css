@@ -157,3 +157,18 @@ i.fas, i.fab {
         cursor: pointer;
     }
 }
+
+section {
+    background-color: #f8f8f8;  /* 배경색 */
+    margin: 20px 0;  /* 상하 마진 */
+    padding: 20px;  /* 패딩 */
+    border-radius: 8px;  /* 모서리 둥글게 */
+}
+
+h2 {
+    color: #333;  /* 제목 색상 */
+}
+
+p, ul {
+    color: #666;  /* 본문 및 목록 색상 */
+}
