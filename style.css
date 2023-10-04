@@ -113,6 +113,8 @@ i.fas, i.fab {
     margin-right: 20px;
     width: 288px;
     height: 216px;
+    object-fit: cover;  /* 이미지의 비율을 유지하면서, 지정한 너비와 높이에 맞게 조절 */
+
 }
 
 
