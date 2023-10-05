@@ -18,6 +18,37 @@ document.querySelector('.menu-icon').addEventListener('click', function() {
     }
 });
 
-document.getElementById('profileImage').addEventListener('click', function() {
-    this.style.transform = this.style.transform === 'rotate(180deg)' ? 'rotate(0deg)' : 'rotate(180deg)';
+
+document.addEventListener('DOMContentLoaded', function() {
+    let isDragging = false;
+    let initialMousePosition = 0;
+    let rotationSpeed = 0;
+    let rotation = 0;
+    const image = document.getElementById('profileImage');
+    const friction = 0.95; // Friction for deceleration
+
+    image.addEventListener('mousedown', function(e) {
+        isDragging = true;
+        initialMousePosition = e.pageX;
+    });
+
+    document.addEventListener('mousemove', function(e) {
+        if (isDragging) {
+            const mouseMove = e.pageX - initialMousePosition;
+            rotationSpeed = mouseMove * 0.5; // Adjust the multiplier for sensitivity
+            initialMousePosition = e.pageX;
+        }
+    });
+
+    document.addEventListener('mouseup', function() {
+        isDragging = false;
+    });
+
+    function animate() {
+        rotation += rotationSpeed;
+        rotationSpeed *= friction;
+        image.style.transform = 'rotate(' + rotation + 'deg)';
+        requestAnimationFrame(animate);
+    }
+    animate();
 });
