@@ -93,6 +93,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 case 'stop':
                     rotationSpeed = 0;
                     break;
+                case 'disappear':
+                    disappearImage();
+                    break;
                 default:
                     console.log('Unknown command');
             }
