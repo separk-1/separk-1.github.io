@@ -180,3 +180,8 @@ i.fas, i.fab {
 .project-title {
     cursor: pointer; /* 마우스 커서를 포인터로 변경하여 클릭 가능함을 나타냅니다. */
 }
+
+.toggle-icon {
+    cursor: pointer;
+    margin-right: 5px;
+}

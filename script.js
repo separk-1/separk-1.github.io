@@ -71,3 +71,22 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const projectTitles = document.querySelectorAll('.project-title');
+
+    projectTitles.forEach(title => {
+        title.addEventListener('click', function () {
+            const detail = this.nextElementSibling;
+            const toggleIcon = this.querySelector('.toggle-icon');
+
+            if(detail.style.display === 'none' || !detail.style.display) {
+                detail.style.display = 'block';
+                toggleIcon.style.transform = 'rotate(180deg)';
+            } else {
+                detail.style.display = 'none';
+                toggleIcon.style.transform = 'rotate(0deg)';
+            }
+        });
+    });
+});
