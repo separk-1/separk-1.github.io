@@ -77,16 +77,22 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    // 모든 .project-title 요소를 선택합니다.
-    const projectTitles = document.querySelectorAll('.project-title');
+document.addEventListener("DOMContentLoaded", function() {
+    // 모든 .toggle-icon 요소를 선택합니다.
+    var toggles = document.querySelectorAll('.toggle-icon');
 
-    // 각 .project-title 요소에 클릭 이벤트 리스너를 추가합니다.
-    projectTitles.forEach(title => {
-        title.addEventListener('click', function () {
-            // 클릭된 .project-title의 형제 요소인 .project-detail를 선택하고 토글합니다.
-            const detail = this.nextElementSibling;
-            detail.classList.toggle('open');
+    // 각 토글 아이콘에 클릭 이벤트 리스너를 추가합니다.
+    toggles.forEach(function(toggle) {
+        toggle.addEventListener('click', function() {
+            // 클릭된 토글 아이콘의 부모 요소의 .project-detail 자식을 선택합니다.
+            var detail = this.parentElement.querySelector('.project-detail');
+
+            // .project-detail 요소의 표시 상태를 토글합니다.
+            if (detail.style.display === 'block') {
+                detail.style.display = 'none';
+            } else {
+                detail.style.display = 'block';
+            }
         });
     });
 });
