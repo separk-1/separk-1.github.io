@@ -59,34 +59,19 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    // 모든 .project-title 요소를 선택합니다.
-    const projectTitles = document.querySelectorAll('.project-title');
+    // 모든 .toggle-icon 요소를 선택합니다.
+    const toggleIcons = document.querySelectorAll('.toggle-icon');
 
-    // 각 .project-title 요소에 클릭 이벤트 리스너를 추가합니다.
-    projectTitles.forEach(title => {
-        title.addEventListener('click', function () {
-            // 클릭된 .project-title의 형제 요소인 .project-detail를 선택하고 토글합니다.
-            const detail = this.nextElementSibling;
+    // 각 .toggle-icon 요소에 클릭 이벤트 리스너를 추가합니다.
+    toggleIcons.forEach(icon => {
+        icon.addEventListener('click', function () {
+            // 클릭된 .toggle-icon의 형제 요소인 .project-detail를 선택하고 토글합니다.
+            const detail = this.nextElementSibling.nextElementSibling;
             detail.style.display = detail.style.display === 'none' ? 'block' : 'none';
-        });
-    });
-});
 
-document.addEventListener("DOMContentLoaded", function () {
-    const projectTitles = document.querySelectorAll('.project-title');
-
-    projectTitles.forEach(title => {
-        title.addEventListener('click', function () {
-            const detail = this.nextElementSibling;
-            const toggleIcon = this.querySelector('.toggle-icon');
-
-            if(detail.style.display === 'none' || !detail.style.display) {
-                detail.style.display = 'block';
-                toggleIcon.style.transform = 'rotate(180deg)';
-            } else {
-                detail.style.display = 'none';
-                toggleIcon.style.transform = 'rotate(0deg)';
-            }
+            // 클릭된 .toggle-icon의 클래스를 토글합니다.
+            this.classList.toggle('fa-chevron-down');
+            this.classList.toggle('fa-chevron-up');
         });
     });
 });
