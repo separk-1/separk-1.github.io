@@ -77,22 +77,11 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-document.addEventListener("DOMContentLoaded", function() {
-    // 모든 .toggle-icon 요소를 선택합니다.
-    var toggles = document.querySelectorAll('.toggle-icon');
-
-    // 각 토글 아이콘에 클릭 이벤트 리스너를 추가합니다.
-    toggles.forEach(function(toggle) {
-        toggle.addEventListener('click', function() {
-            // 클릭된 토글 아이콘의 부모 요소의 .project-detail 자식을 선택합니다.
-            var detail = this.parentElement.querySelector('.project-detail');
-
-            // .project-detail 요소의 표시 상태를 토글합니다.
-            if (detail.style.display === 'block') {
-                detail.style.display = 'none';
-            } else {
-                detail.style.display = 'block';
-            }
+document.addEventListener('DOMContentLoaded', (event) => {
+    document.querySelectorAll('.toggle-icon').forEach((toggleIcon) => {
+        toggleIcon.addEventListener('click', (event) => {
+            const projectDetail = event.target.parentElement.querySelector('.project-detail');
+            projectDetail.style.display = (projectDetail.style.display === 'none' || projectDetail.style.display === '') ? 'block' : 'none';
         });
     });
 });
