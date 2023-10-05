@@ -58,3 +58,16 @@ document.addEventListener('DOMContentLoaded', function() {
     animate();
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    // 모든 .project-title 요소를 선택합니다.
+    const projectTitles = document.querySelectorAll('.project-title');
+
+    // 각 .project-title 요소에 클릭 이벤트 리스너를 추가합니다.
+    projectTitles.forEach(title => {
+        title.addEventListener('click', function () {
+            // 클릭된 .project-title의 형제 요소인 .project-detail를 선택하고 토글합니다.
+            const detail = this.nextElementSibling;
+            detail.style.display = detail.style.display === 'none' ? 'block' : 'none';
+        });
+    });
+});

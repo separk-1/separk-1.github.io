@@ -171,3 +171,12 @@ i.fas, i.fab {
         cursor: pointer;
     }
 }
+
+.project-detail {
+    display: none; /* 기본적으로 프로젝트 상세 내용을 숨깁니다. */
+    padding-left: 20px; /* 상세 내용에 약간의 패딩을 추가합니다. */
+}
+
+.project-title {
+    cursor: pointer; /* 마우스 커서를 포인터로 변경하여 클릭 가능함을 나타냅니다. */
+}
