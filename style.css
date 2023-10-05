@@ -185,3 +185,9 @@ i.fas, i.fab {
     cursor: pointer;
     margin-right: 5px;
 }
+
+.custom-image {
+    width: 200px;  /* 원하는 너비로 설정 */
+    height: 100px;  /* 원하는 높이로 설정 */
+    object-fit: cover;  /* 이미지의 비율을 유지하면서, 지정한 너비와 높이에 맞게 조절 */
+}
