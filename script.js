@@ -86,12 +86,14 @@ document.addEventListener('DOMContentLoaded', function() {
     
         // 페이드 아웃 애니메이션 함수
         function fadeOut() {
-            opacity -= 0.05; // 투명도를 점차 감소시킵니다.
+            opacity -= 0.01; // 투명도를 점차 감소시킵니다.
             image.style.opacity = opacity;
     
             // 투명도가 0보다 크면 계속 페이드 아웃을 진행합니다.
             if (opacity > 0) {
-                requestAnimationFrame(fadeOut);
+                setTimeout(() => {
+                    requestAnimationFrame(fadeOut);
+                }, 50); // 50ms 간격으로 애니메이션을 진행합니다.
             } else {
                 image.style.display = 'none'; // 이미지를 완전히 숨깁니다.
             }
