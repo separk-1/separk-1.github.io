@@ -30,7 +30,7 @@ header p {
 section {
     background-color: #f8f8f8;  /* 배경색 */
     margin: 20px 0;  /* 상하 마진 */
-    padding: 20px;  /* 패딩 */
+    padding: 30px;  /* 패딩 */
     border-radius: 8px;  /* 모서리 둥글게 */
 }
 
