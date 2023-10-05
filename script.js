@@ -76,24 +76,17 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+
 document.addEventListener("DOMContentLoaded", function () {
-    // 이미지를 클릭하면 모달을 엽니다.
-    const images = document.querySelectorAll('.preview-image');
-    const modal = document.getElementById("myModal");
-    const modalImg = document.getElementById("img01");
-    const captionText = document.getElementById("caption");
+    // 모든 .project-title 요소를 선택합니다.
+    const projectTitles = document.querySelectorAll('.project-title');
 
-    images.forEach(img => {
-        img.onclick = function(){
-            modal.style.display = "block";
-            modalImg.src = this.src;
-            captionText.innerHTML = this.alt;
-        }
+    // 각 .project-title 요소에 클릭 이벤트 리스너를 추가합니다.
+    projectTitles.forEach(title => {
+        title.addEventListener('click', function () {
+            // 클릭된 .project-title의 형제 요소인 .project-detail를 선택하고 토글합니다.
+            const detail = this.nextElementSibling;
+            detail.classList.toggle('open');
+        });
     });
-
-    // (X)를 클릭하면 모달을 닫습니다.
-    const span = document.getElementsByClassName("close")[0];
-    span.onclick = function() { 
-        modal.style.display = "none";
-    }
 });
