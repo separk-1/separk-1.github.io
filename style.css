@@ -178,8 +178,8 @@ i.fas, i.fab {
 }
 
 .custom-image {
-    width: 400px;
-    height: 100px;
+    width: 2000px;
+    height: auto;
     object-fit: contain;
 }
 
