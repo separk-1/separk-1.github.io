@@ -21,27 +21,32 @@ document.querySelector('.menu-icon').addEventListener('click', function() {
 
 document.addEventListener('DOMContentLoaded', function() {
     let isDragging = false;
-    let initialMousePosition = 0;
     let rotationSpeed = 0;
     let rotation = 0;
     const image = document.getElementById('profileImage');
     const friction = 0.95; // Friction for deceleration
 
     image.addEventListener('mousedown', function(e) {
-        isDragging = true;
-        initialMousePosition = e.pageX;
+        if(e.target === image) {
+            isDragging = true;
+        }
     });
 
     document.addEventListener('mousemove', function(e) {
         if (isDragging) {
-            const mouseMove = e.pageX - initialMousePosition;
+            const mouseMove = e.movementX;
             rotationSpeed = mouseMove * 0.5; // Adjust the multiplier for sensitivity
-            initialMousePosition = e.pageX;
         }
     });
 
     document.addEventListener('mouseup', function() {
         isDragging = false;
+    });
+
+    image.addEventListener('click', function() {
+        rotationSpeed = 0;
+        rotation = 0;
+        image.style.transform = 'rotate(' + rotation + 'deg)';
     });
 
     function animate() {
