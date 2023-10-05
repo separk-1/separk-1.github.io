@@ -57,3 +57,16 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     animate();
 });
+
+document.querySelectorAll('#navbar a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+        
+        window.scrollBy(0, -60); // 네비게이션 바의 높이만큼 올립니다.
+    });
+});
