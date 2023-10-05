@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let rotationSpeed = 0;
     let rotation = 0;
     const image = document.getElementById('profileImage');
-    const friction = 0.97; // 조금 더 천천히 멈추도록 friction 값을 증가시켰습니다.
+    const friction = 0.97;
 
     image.addEventListener('mousedown', function(e) {
         if(e.target === image) {
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.addEventListener('mousemove', function(e) {
         if (isDragging) {
             const mouseMove = e.movementX;
-            rotationSpeed += mouseMove * 0.2; // 여기를 약간 수정하여 마우스의 움직임에 따른 회전 속도가 부드럽게 변하도록 했습니다.
+            rotationSpeed += mouseMove * 0.2;
         }
     });
 
