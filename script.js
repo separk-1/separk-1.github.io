@@ -100,9 +100,7 @@ document.addEventListener('DOMContentLoaded', function() {
         fadeOut(); // 페이드 아웃 함수를 호출합니다.
     }
     
-
-    let commandHistory = []; // 이전 명령어들을 저장할 배열
-    let commandIndex = -1; // 현재 보고 있는 이전 명령어의 인덱스
+    let lastCommand = ""; // 이전에 입력한 명령어를 저장하는 변수
     
     // Command input
     document.getElementById('command-input').addEventListener('keydown', function(e) {
@@ -124,22 +122,9 @@ document.addEventListener('DOMContentLoaded', function() {
                     console.log('Unknown command');
             }
 
-            e.target.value = '';  // Clear the command input
+            e.target.value = '';  // 커맨드 입력창 초기화
         } else if (e.key === 'ArrowUp') {
-            // 위 화살표 키가 눌렸을 때
-            if (commandHistory.length > 0 && commandIndex < commandHistory.length - 1) {
-                commandIndex++;
-                e.target.value = commandHistory[commandHistory.length - 1 - commandIndex]; // 이전 명령어를 표시
-            }
-        } else if (e.key === 'ArrowDown') {
-            // 아래 화살표 키가 눌렸을 때
-            if (commandIndex > 0) {
-                commandIndex--;
-                e.target.value = commandHistory[commandHistory.length - 1 - commandIndex]; // 다음 명령어를 표시
-            } else {
-                commandIndex = -1;
-                e.target.value = '';
-            }
+            e.target.value = lastCommand; // 이전 명령어를 입력창에 불러옵니다.
         }
     });
 });
