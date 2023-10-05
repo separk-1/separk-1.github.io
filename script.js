@@ -80,6 +80,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    let commandHistory = []; // 이전 명령어들을 저장할 배열
+    let commandIndex = -1; // 현재 보고 있는 이전 명령어의 인덱스
+    
     // Command input
     document.getElementById('command-input').addEventListener('keydown', function(e) {
         if (e.key === 'Enter') {
@@ -101,6 +104,21 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
             e.target.value = '';  // Clear the command input
+        } else if (e.key === 'ArrowUp') {
+            // 위 화살표 키가 눌렸을 때
+            if (commandHistory.length > 0 && commandIndex < commandHistory.length - 1) {
+                commandIndex++;
+                e.target.value = commandHistory[commandHistory.length - 1 - commandIndex]; // 이전 명령어를 표시
+            }
+        } else if (e.key === 'ArrowDown') {
+            // 아래 화살표 키가 눌렸을 때
+            if (commandIndex > 0) {
+                commandIndex--;
+                e.target.value = commandHistory[commandHistory.length - 1 - commandIndex]; // 다음 명령어를 표시
+            } else {
+                commandIndex = -1;
+                e.target.value = '';
+            }
         }
     });
 });
