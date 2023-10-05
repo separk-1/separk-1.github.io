@@ -198,12 +198,14 @@ i.fas, i.fab {
 }
 
 .project-detail {
+    display: block;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s ease-out;
 }
 
 .project-detail.open {
+    display: block;
     max-height: 1500px;
 }
 

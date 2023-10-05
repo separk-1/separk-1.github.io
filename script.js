@@ -66,6 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
         icon.addEventListener('click', function () {
             const detail = this.nextElementSibling.nextElementSibling;
             detail.classList.toggle('open');
+
             this.classList.toggle('fa-chevron-down');
             this.classList.toggle('fa-chevron-up');
         });
