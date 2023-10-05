@@ -64,8 +64,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // 각 .toggle-icon 요소에 클릭 이벤트 리스너를 추가합니다.
     toggleIcons.forEach(icon => {
         icon.addEventListener('click', function () {
-            // 클릭된 .toggle-icon의 부모 요소(li)의 다음 형제 요소(.project-detail)를 선택하고 토글합니다.
-            const detail = this.parentElement.querySelector('.project-detail');
+            // 클릭된 .toggle-icon의 형제 요소인 .project-detail를 선택하고 토글합니다.
+            const detail = this.nextElementSibling.nextElementSibling;
             detail.style.display = detail.style.display === 'block' ? 'none' : 'block';
 
             // 클릭된 .toggle-icon의 클래스를 토글합니다.
@@ -74,3 +74,4 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
