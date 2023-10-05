@@ -80,6 +80,27 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    function disappearImage() {
+        const image = document.getElementById('profileImage');
+        let opacity = 1; // 시작할 때의 투명도
+    
+        // 페이드 아웃 애니메이션 함수
+        function fadeOut() {
+            opacity -= 0.05; // 투명도를 점차 감소시킵니다.
+            image.style.opacity = opacity;
+    
+            // 투명도가 0보다 크면 계속 페이드 아웃을 진행합니다.
+            if (opacity > 0) {
+                requestAnimationFrame(fadeOut);
+            } else {
+                image.style.display = 'none'; // 이미지를 완전히 숨깁니다.
+            }
+        }
+    
+        fadeOut(); // 페이드 아웃 함수를 호출합니다.
+    }
+    
+
     let commandHistory = []; // 이전 명령어들을 저장할 배열
     let commandIndex = -1; // 현재 보고 있는 이전 명령어의 인덱스
     
