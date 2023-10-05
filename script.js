@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.addEventListener('mousemove', function(e) {
         if (isDragging) {
             const mouseMove = e.movementX;
-            rotationSpeed += mouseMove * 0.2;
+            rotationSpeed += mouseMove * 0.5;
         }
     });
 
