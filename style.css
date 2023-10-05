@@ -109,13 +109,14 @@ i.fas, i.fab {
 }
 
 .profile-image {
-    border-radius: 0%;
+    border-radius: 30%;
     margin-right: 20px;
     width: 288px;
     height: 216px;
-    object-fit: cover;  /* 이미지의 비율을 유지하면서, 지정한 너비와 높이에 맞게 조절 */
-
+    object-fit: cover;
+    transition: transform 0.5s ease;  /* 부드러운 변환 효과 */
 }
+
 
 
 /* 모바일 스타일 */

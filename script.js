@@ -17,3 +17,7 @@ document.querySelector('.menu-icon').addEventListener('click', function() {
         }
     }
 });
+
+document.getElementById('profileImage').addEventListener('click', function() {
+    this.style.transform = this.style.transform === 'rotate(180deg)' ? 'rotate(0deg)' : 'rotate(180deg)';
+});
