@@ -232,6 +232,6 @@ i.fas, i.fab {
 
 .fade-out {
     animation-name: fadeOut;
-    animation-duration: 1s; /* or any duration you want */
+    animation-duration: 5s; /* or any duration you want */
     animation-fill-mode: forwards;
 }
