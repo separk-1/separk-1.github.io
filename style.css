@@ -137,8 +137,16 @@ i.fas, i.fab {
         width: 100%;
         height: auto;
     }
-}
 
+    .custom-image {
+        display: none;
+    }
+
+    .image-link {
+        display: block;
+    }
+}
+    
 /* 태블릿 스타일 */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
     nav li {

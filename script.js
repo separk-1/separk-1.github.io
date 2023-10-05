@@ -70,3 +70,14 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const imageLinks = document.querySelectorAll('.image-link');
+
+    imageLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.open(link.href, 'ImagePopup', 'width=600,height=600');
+        });
+    });
+});
