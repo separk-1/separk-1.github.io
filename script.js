@@ -82,3 +82,39 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+document.getElementById('execute-command').addEventListener('click', function() {
+    const commandInput = document.getElementById('command-input');
+    const command = commandInput.value.trim();
+
+    executeCommand(command);
+
+    // Clear the input field
+    commandInput.value = '';
+});
+
+function executeCommand(command) {
+    const [action, value] = command.split(' ');
+
+    switch(action) {
+        case 'rotate':
+            rotateImage(Number(value));
+            break;
+        // 추가적인 명령어들...
+        default:
+            alert('Unknown command');
+    }
+}
+
+function rotateImage(speed) {
+    const image = document.getElementById('profileImage');
+    let rotation = 0;
+
+    function animate() {
+        rotation += speed;
+        image.style.transform = 'rotate(' + rotation + 'deg)';
+        requestAnimationFrame(animate);
+    }
+
+    animate();
+}
