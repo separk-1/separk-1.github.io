@@ -210,16 +210,14 @@ i.fas, i.fab {
 
 #command-section {
     position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #333;
-    color: white;
+    bottom: 10px;
+    left: 10px;
+    background-color: #f8f8f8;
     padding: 10px;
+    border-radius: 5px;
 }
 
-#command-input {
-    width: 80%;
+#commandInput {
     padding: 5px;
 }
 

@@ -83,38 +83,29 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-document.getElementById('execute-command').addEventListener('click', function() {
-    const commandInput = document.getElementById('command-input');
-    const command = commandInput.value.trim();
-
-    executeCommand(command);
-
-    // Clear the input field
-    commandInput.value = '';
+document.getElementById('commandInput').addEventListener('keyup', function(e) {
+    if (e.key === 'Enter') {
+        executeCommand();
+    }
 });
 
-function executeCommand(command) {
+function executeCommand() {
+    const commandInput = document.getElementById('commandInput');
+    const command = commandInput.value;
     const [action, value] = command.split(' ');
 
     switch(action) {
         case 'rotate':
             rotateImage(Number(value));
             break;
+        case 'stop':
+            stopRotation();
+            break;
         // 추가적인 명령어들...
         default:
             alert('Unknown command');
     }
-}
 
-function rotateImage(speed) {
-    const image = document.getElementById('profileImage');
-    let rotation = 0;
-
-    function animate() {
-        rotation += speed;
-        image.style.transform = 'rotate(' + rotation + 'deg)';
-        requestAnimationFrame(animate);
-    }
-
-    animate();
+    // Clear the input
+    commandInput.value = '';
 }
