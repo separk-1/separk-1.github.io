@@ -207,22 +207,22 @@ i.fas, i.fab {
     max-height: 1500px;
 }
 
-
-#command-section {
+#command-window {
     position: fixed;
     bottom: 10px;
-    left: 10px;
-    background-color: #f8f8f8;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 10px;
     border-radius: 5px;
 }
 
-#commandInput {
+#command-input {
+    width: 200px;
     padding: 5px;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 3px;
 }
 
-#execute-command {
-    width: 18%;
-    padding: 5px;
-    margin-left: 2%;
-}
+/* 기존의 CSS 코드 ... */
