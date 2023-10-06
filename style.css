@@ -116,15 +116,19 @@ i.fas, i.fab {
     position: relative;
 }
 
-.profile-image {    
+.profile-image {
     position: absolute;
     border-radius: 50%;
     margin-right: 20px;
     width: auto;
-    height: 100px;
+    height: 200px;
     object-fit: cover;
-    transition: opacity 1s ease-in-out;
+    transition: transform 0.5s ease;  /* 부드러운 변환 효과 */
 }
+
+
+.hidden {
+    opacity: 0;
 
 
 
