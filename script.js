@@ -29,9 +29,10 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Image rotation
-    const imageContainer = document.querySelector('.profile-container'); 
-    imageContainer.addEventListener('mousedown', function(e) {
-        isDragging = true;
+    image.addEventListener('mousedown', function(e) {
+        if(e.target === image) {
+            isDragging = true;
+        }
     });
 
     document.addEventListener('mousemove', function(e) {
@@ -81,24 +82,22 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function disappearImage() {
         const image = document.getElementById('profileImage');
-        let opacity = 1; // 시작할 때의 투명도
+        let opacity = 1; 
     
-        // 페이드 아웃 애니메이션 함수
         function fadeOut() {
-            opacity -= 0.01; // 투명도를 점차 감소시킵니다.
+            opacity -= 0.01; 
             image.style.opacity = opacity;
     
-            // 투명도가 0보다 크면 계속 페이드 아웃을 진행합니다.
             if (opacity > 0) {
                 setTimeout(() => {
                     requestAnimationFrame(fadeOut);
-                }, 50); // 50ms 간격으로 애니메이션을 진행합니다.
+                }, 50); 
             } else {
-                image.style.display = 'none'; // 이미지를 완전히 숨깁니다.
+                image.style.display = 'none'; 
             }
         }
     
-        fadeOut(); // 페이드 아웃 함수를 호출합니다.
+        fadeOut(); 
     }
     
     function changeImageWithFade(newImagePath) {
@@ -117,7 +116,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 1000);
     } 
 
-    let lastCommand = ""; // 이전에 입력한 명령어를 저장하는 변수
+    let lastCommand = ""; 
     
     // Command input
     document.getElementById('command-input').addEventListener('keydown', function(e) {
@@ -157,9 +156,9 @@ document.addEventListener('DOMContentLoaded', function() {
                     console.log('Unknown command');
             }
 
-            e.target.value = '';  // 커맨드 입력창 초기화
+            e.target.value = '';  
         } else if (e.key === 'ArrowUp') {
-            e.target.value = lastCommand; // 이전 명령어를 입력창에 불러옵니다.
+            e.target.value = lastCommand; 
         }
     });
 });
