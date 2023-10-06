@@ -145,6 +145,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 case 'smile':
                     changeImageWithFade('images/profile_smile.jpg');
                     break;
+                case 'selfie':
+                    changeImageWithFade('images/profile_selfie.jpg');
+                    break;
                 default:
                     console.log('Unknown command');
             }
