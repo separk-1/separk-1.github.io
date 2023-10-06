@@ -133,6 +133,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 case 'gogo':
                     changeImageWithFade('images/cat.jpg');
                     break;
+                case 'yellow':
+                    changeImageWithFade('images/profile_yellow.jpg');
+                    break;
+                case 'gray':
+                    changeImageWithFade('images/profile_gray.jpg');
+                    break;
+                case 'smile':
+                    changeImageWithFade('images/profile_smile.jpg');
+                    break;
                 default:
                     console.log('Unknown command');
             }
