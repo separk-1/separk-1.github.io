@@ -139,6 +139,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 case 'gray':
                     changeImageWithFade('images/profile_gray.jpg');
                     break;
+                case 'pink':
+                    changeImageWithFade('images/profile_pink.jpg');
+                    break;
                 case 'smile':
                     changeImageWithFade('images/profile_smile.jpg');
                     break;
