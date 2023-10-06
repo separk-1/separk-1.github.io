@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     disappearImage();
                     break;
                 case 'gogo':
-                    changeImageWithFade('image/cat.jpg');
+                    changeImageWithFade('images/cat.jpg');
                     break;
                 default:
                     console.log('Unknown command');
