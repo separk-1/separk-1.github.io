@@ -48,8 +48,13 @@ document.addEventListener('DOMContentLoaded', function() {
     image.addEventListener('click', function() {
         rotationSpeed = 0;
         rotation = 0;
+        image.style.transition = 'transform 0.5s ease-out'; // 추가: 애니메이션 효과
         image.style.transform = 'rotate(' + rotation + 'deg)';
+        setTimeout(() => {
+            image.style.transition = ''; // 추가: 애니메이션 효과 제거
+        }, 1000); // 추가: 애니메이션 지속 시간과 일치
     });
+    
 
     function animate() {
         rotation += rotationSpeed;
