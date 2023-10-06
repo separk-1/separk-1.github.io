@@ -114,10 +114,11 @@ i.fas, i.fab {
     display: flex;
     align-items: center;
     position: relative;
+    margin-bottom: 20px;  /* 이미지와 아래 텍스트 간의 간격 확보 */
 }
 
 .profile-image {
-    position: absolute;
+    position: relative;  /* 이미지의 위치를 조절합니다. */
     border-radius: 50%;
     margin-right: 20px;
     width: auto;
