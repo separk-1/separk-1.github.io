@@ -29,10 +29,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Image rotation
-    image.addEventListener('mousedown', function(e) {
-        if(e.target === image) {
-            isDragging = true;
-        }
+    const imageContainer = document.querySelector('.profile-container'); 
+    imageContainer.addEventListener('mousedown', function(e) {
+        isDragging = true;
     });
 
     document.addEventListener('mousemove', function(e) {
@@ -82,41 +81,46 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function disappearImage() {
         const image = document.getElementById('profileImage');
-        let opacity = 1; 
+        let opacity = 1; // 시작할 때의 투명도
     
+        // 페이드 아웃 애니메이션 함수
         function fadeOut() {
-            opacity -= 0.01; 
+            opacity -= 0.01; // 투명도를 점차 감소시킵니다.
             image.style.opacity = opacity;
     
+            // 투명도가 0보다 크면 계속 페이드 아웃을 진행합니다.
             if (opacity > 0) {
                 setTimeout(() => {
                     requestAnimationFrame(fadeOut);
-                }, 50); 
+                }, 50); // 50ms 간격으로 애니메이션을 진행합니다.
             } else {
-                image.style.display = 'none'; 
+                image.style.display = 'none'; // 이미지를 완전히 숨깁니다.
             }
         }
     
-        fadeOut(); 
+        fadeOut(); // 페이드 아웃 함수를 호출합니다.
     }
     
     function changeImageWithFade(newImagePath) {
-        const currentImage = document.getElementById('profileImage');
+        const currentImage = document.getElementById('currentImage');
         const nextImage = document.getElementById('nextImage');
         
+        // 다음 이미지의 src를 새 이미지 경로로 설정합니다.
         nextImage.src = newImagePath;
         
+        // 현재 이미지를 페이드 아웃하고, 다음 이미지를 페이드 인합니다.
         currentImage.classList.add('hidden');
         nextImage.classList.remove('hidden');
         
+        // 애니메이션이 끝난 후, 현재 이미지의 src를 새 이미지로 변경하고, 투명도를 원래대로 돌립니다.
         setTimeout(() => {
             currentImage.src = newImagePath;
             currentImage.classList.remove('hidden');
-            nextImage.classList.add('hidden');
-        }, 1000);
+            nextImage.classList.add('hidden');  // 다음 이미지를 다시 숨깁니다.
+        }, 1000); // 1000ms = 1s, CSS의 transition 시간과 일치해야 합니다.
     } 
 
-    let lastCommand = ""; 
+    let lastCommand = ""; // 이전에 입력한 명령어를 저장하는 변수
     
     // Command input
     document.getElementById('command-input').addEventListener('keydown', function(e) {
@@ -156,9 +160,9 @@ document.addEventListener('DOMContentLoaded', function() {
                     console.log('Unknown command');
             }
 
-            e.target.value = '';  
+            e.target.value = '';  // 커맨드 입력창 초기화
         } else if (e.key === 'ArrowUp') {
-            e.target.value = lastCommand; 
+            e.target.value = lastCommand; // 이전 명령어를 입력창에 불러옵니다.
         }
     });
 });
