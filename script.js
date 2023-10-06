@@ -120,6 +120,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 case 'disappear':
                     disappearImage();
                     break;
+                case 'gogo':
+                    document.getElementById('profileImage').src = 'images/cat.jpg';
+                    break;
                 default:
                     console.log('Unknown command');
             }
