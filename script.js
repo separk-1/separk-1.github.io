@@ -117,9 +117,10 @@ document.addEventListener('DOMContentLoaded', function() {
         setTimeout(() => {
             currentImage.src = newImagePath;
             currentImage.classList.remove('hidden');
+            nextImage.classList.add('hidden');  // 다음 이미지를 다시 숨깁니다.
         }, 1000); // 1000ms = 1s, CSS의 transition 시간과 일치해야 합니다.
     } 
-    
+
     let lastCommand = ""; // 이전에 입력한 명령어를 저장하는 변수
     
     // Command input
