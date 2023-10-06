@@ -235,3 +235,11 @@ i.fas, i.fab {
     animation-duration: 5s; /* or any duration you want */
     animation-fill-mode: forwards;
 }
+
+#profileImage {
+    transition: opacity 1s ease-in-out;
+}
+
+.hidden {
+    opacity: 0;
+}

@@ -102,6 +102,16 @@ document.addEventListener('DOMContentLoaded', function() {
         fadeOut(); // 페이드 아웃 함수를 호출합니다.
     }
     
+    function changeImageWithFade(newImagePath) {
+        const imageElement = document.getElementById('profileImage');
+        // 이미지를 페이드 아웃합니다.
+        imageElement.classList.add('hidden');
+        // 페이드 아웃이 끝나면 이미지 소스를 변경하고 페이드 인합니다.
+        setTimeout(() => {
+            imageElement.src = newImagePath;
+            imageElement.classList.remove('hidden');
+        }, 1000); // 1000ms = 1s, CSS의 transition 시간과 일치해야 함
+    }    
     let lastCommand = ""; // 이전에 입력한 명령어를 저장하는 변수
     
     // Command input
@@ -121,7 +131,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     disappearImage();
                     break;
                 case 'gogo':
-                    document.getElementById('profileImage').src = 'images/cat.jpg';
+                    changeImageWithFade('image/cat.jpg');
                     break;
                 default:
                     console.log('Unknown command');
