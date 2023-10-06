@@ -103,15 +103,23 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     function changeImageWithFade(newImagePath) {
-        const imageElement = document.getElementById('profileImage');
-        // 이미지를 페이드 아웃합니다.
-        imageElement.classList.add('hidden');
-        // 페이드 아웃이 끝나면 이미지 소스를 변경하고 페이드 인합니다.
+        const currentImage = document.getElementById('currentImage');
+        const nextImage = document.getElementById('nextImage');
+        
+        // 다음 이미지의 src를 새 이미지 경로로 설정합니다.
+        nextImage.src = newImagePath;
+        
+        // 현재 이미지를 페이드 아웃하고, 다음 이미지를 페이드 인합니다.
+        currentImage.classList.add('hidden');
+        nextImage.classList.remove('hidden');
+        
+        // 애니메이션이 끝난 후, 현재 이미지의 src를 새 이미지로 변경하고, 투명도를 원래대로 돌립니다.
         setTimeout(() => {
-            imageElement.src = newImagePath;
-            imageElement.classList.remove('hidden');
-        }, 1000); // 1000ms = 1s, CSS의 transition 시간과 일치해야 함
-    }    
+            currentImage.src = newImagePath;
+            currentImage.classList.remove('hidden');
+        }, 1000); // 1000ms = 1s, CSS의 transition 시간과 일치해야 합니다.
+    } 
+    
     let lastCommand = ""; // 이전에 입력한 명령어를 저장하는 변수
     
     // Command input
