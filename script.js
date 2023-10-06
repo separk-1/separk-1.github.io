@@ -129,6 +129,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Command input
     document.getElementById('command-input').addEventListener('keydown', function(e) {
+        console.log('Key down event detected:', e.key);
         if (e.key === 'Enter') {
             const command = e.target.value.trim();
             const [action, value] = command.split(' ');
