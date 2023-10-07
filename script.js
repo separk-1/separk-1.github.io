@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let isDragging = false;
     let rotationSpeed = 0;
     let rotation = 0;
-    const image = document.getElementById('profileImage');
+    const image = document.getElementById('currentImage');
     const friction = 0.97;
 
     // Navbar smooth scrolling
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     function disappearImage() {
-        const image = document.getElementById('profileImage');
+        const image = document.getElementById('currentImage');
         let opacity = 1;
     
         function fadeOut() {
