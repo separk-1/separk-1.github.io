@@ -107,6 +107,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     function changeImageWithFade(newImagePath) {
+
+        console.log('Changing image to:', newImagePath);  // 이 부분을 추가
         const currentImage = document.getElementById('currentImage');
         const nextImage = document.getElementById('nextImage');
         
