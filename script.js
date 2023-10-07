@@ -48,14 +48,13 @@ document.addEventListener('DOMContentLoaded', function() {
     image.addEventListener('click', function() {
         rotationSpeed = 0;
         rotation = 0;
-        image.style.transition = 'transform 0.5s ease-out'; // 추가: 애니메이션 효과
+        image.style.transition = 'transform 0.5s ease-out';
         image.style.transform = 'rotate(' + rotation + 'deg)';
         setTimeout(() => {
-            image.style.transition = ''; // 추가: 애니메이션 효과 제거
-        }, 1000); // 추가: 애니메이션 지속 시간과 일치
+            image.style.transition = '';
+        }, 500);
     });
     
-
     function animate() {
         rotation += rotationSpeed;
         rotationSpeed *= friction;
@@ -86,91 +85,89 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function disappearImage() {
         const image = document.getElementById('profileImage');
-        let opacity = 1; // 시작할 때의 투명도
+        let opacity = 1;
     
-        // 페이드 아웃 애니메이션 함수
         function fadeOut() {
-            opacity -= 0.01; // 투명도를 점차 감소시킵니다.
+            opacity -= 0.01;
             image.style.opacity = opacity;
     
-            // 투명도가 0보다 크면 계속 페이드 아웃을 진행합니다.
             if (opacity > 0) {
                 setTimeout(() => {
                     requestAnimationFrame(fadeOut);
-                }, 50); // 50ms 간격으로 애니메이션을 진행합니다.
+                }, 50);
             } else {
-                image.style.display = 'none'; // 이미지를 완전히 숨깁니다.
+                image.style.display = 'none';
             }
         }
     
-        fadeOut(); // 페이드 아웃 함수를 호출합니다.
+        fadeOut();
     }
     
     function changeImageWithFade(newImagePath) {
-
-        console.log('Changing image to:', newImagePath);  // 이 부분을 추가
         const currentImage = document.getElementById('currentImage');
         const nextImage = document.getElementById('nextImage');
         
-        // 다음 이미지의 src를 새 이미지 경로로 설정합니다.
         nextImage.src = newImagePath;
         
-        // 현재 이미지를 페이드 아웃하고, 다음 이미지를 페이드 인합니다.
         currentImage.classList.add('hidden');
         nextImage.classList.remove('hidden');
         
-        // 애니메이션이 끝난 후, 현재 이미지의 src를 새 이미지로 변경하고, 투명도를 원래대로 돌립니다.
         setTimeout(() => {
             currentImage.src = newImagePath;
             currentImage.classList.remove('hidden');
-            nextImage.classList.add('hidden');  // 다음 이미지를 다시 숨깁니다.
-        }, 1000); // 1000ms = 1s, CSS의 transition 시간과 일치해야 합니다.
+            nextImage.classList.add('hidden');
+        }, 1000);
     } 
 
-    let lastCommand = ""; // 이전에 입력한 명령어를 저장하는 변수
+    let lastCommand = "";
     
     // Command input
-    document.getElementById('command-input').addEventListener('keydown', function(e) {
-        console.log('Key down event detected:', e.key);
-        if (e.key === 'Enter') {
-            const command = e.target.value.trim();
-            const [action, value] = command.split(' ');
+    const commandInput = document.getElementById('command-input');
+    if (commandInput) {
+        commandInput.addEventListener('keydown', function(e) {
+            console.log('Key down event detected:', e.key);
+            if (e.key === 'Enter') {
+                const command = e.target.value.trim();
+                const [action, value] = command.split(' ');
 
-            switch(action) {
-                case 'rotate':
-                    rotationSpeed = parseFloat(value);
-                    break;
-                case 'stop':
-                    rotationSpeed = 0;
-                    break;
-                case 'disappear':
-                    disappearImage();
-                    break;
-                case 'gogo':
-                    changeImageWithFade('images/cat.jpg');
-                    break;
-                case 'yellow':
-                    changeImageWithFade('images/profile_yellow.jpg');
-                    break;
-                case 'gray':
-                    changeImageWithFade('images/profile_gray.jpg');
-                    break;
-                case 'pink':
-                    changeImageWithFade('images/profile_pink.jpg');
-                    break;
-                case 'smile':
-                    changeImageWithFade('images/profile_smile.jpg');
-                    break;
-                case 'selfie':
-                    changeImageWithFade('images/profile_selfie.jpg');
-                    break;
-                default:
-                    console.log('Unknown command');
+                switch(action) {
+                    case 'rotate':
+                        rotationSpeed = parseFloat(value);
+                        break;
+                    case 'stop':
+                        rotationSpeed = 0;
+                        break;
+                    case 'disappear':
+                        disappearImage();
+                        break;
+                    case 'gogo':
+                        changeImageWithFade('images/cat.jpg');
+                        break;
+                    case 'yellow':
+                        changeImageWithFade('images/profile_yellow.jpg');
+                        break;
+                    case 'gray':
+                        changeImageWithFade('images/profile_gray.jpg');
+                        break;
+                    case 'pink':
+                        changeImageWithFade('images/profile_pink.jpg');
+                        break;
+                    case 'smile':
+                        changeImageWithFade('images/profile_smile.jpg');
+                        break;
+                    case 'selfie':
+                        changeImageWithFade('images/profile_selfie.jpg');
+                        break;
+                    default:
+                        console.log('Unknown command');
+                }
+
+                e.target.value = '';
+            } else if (e.key === 'ArrowUp') {
+                e.target.value = lastCommand;
             }
-
-            e.target.value = '';  // 커맨드 입력창 초기화
-        } else if (e.key === 'ArrowUp') {
-            e.target.value = lastCommand; // 이전 명령어를 입력창에 불러옵니다.
-        }
-    });
+        });
+    } else {
+        console.error("Element with id 'command-input' not found");
+    }
 });
