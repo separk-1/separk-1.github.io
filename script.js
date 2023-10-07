@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
         image.style.transform = 'rotate(' + rotation + 'deg)';
         setTimeout(() => {
             image.style.transition = '';
-        }, 500);
+        }, 1000);
     });
     
     function animate() {
