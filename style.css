@@ -128,8 +128,13 @@ i.fas, i.fab {
 }
 
 .profile-image img {
-    width: 100%; /* 이미지가 컨테이너 너비에 맞게 조절됩니다 */
+    position: absolute;  /* 이미지의 위치를 조절합니다. */
+    width: 200px;
+    margin-right: 20px;
+    height: auto;
+    object-fit: cover;
     border-radius: 50%; /* 원형 이미지를 만듭니다 */
+    transition: opacity 1s ease-in-out;  /* 부드러운 변환 효과 */
 }
 
 .hidden {
