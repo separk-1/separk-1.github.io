@@ -126,10 +126,13 @@ p {
 .profile-info {
     flex: 1; /* 두 열이 동일한 너비를 가지도록 합니다 */
     padding-right: 20px; /* 이미지와의 간격을 만듭니다 */
+    order: 2;
 }
 
 .profile-image {
     flex: 1; /* 두 열이 동일한 너비를 가지도록 합니다 */
+    order: 1; /* 이미지를 텍스트의 왼쪽에 위치시킵니다 */
+    margin-right: 20px; /* 이미지와 텍스트 사이의 간격을 조절합니다 */
 }
 
 .profile-image img {
