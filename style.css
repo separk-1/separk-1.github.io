@@ -11,7 +11,7 @@ header {
     background-color: #333;
     color: #F8F8F8;
     padding: 10px 20px;
-    text-align: center;
+    text-align: left;
     padding-top: 80px;  /* 메뉴 아이콘 공간 확보를 위한 패딩 추가 */
 }
 
