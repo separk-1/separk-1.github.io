@@ -141,8 +141,8 @@ p {
 }
 
 .profile-info {
-    flex: 1; /* 두 열이 동일한 너비를 가지도록 합니다 */
-    order: 2;
+    /*flex: 1; /* 두 열이 동일한 너비를 가지도록 합니다 */
+    /*order: 2;
 }
 
 .profile-image {
