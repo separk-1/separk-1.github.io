@@ -18,12 +18,10 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 1.8em;
 }
 
 header p {
     margin: 20px 10 0;
-    font-size: 1.2em;
     text-align: left;
 
 }
@@ -47,6 +45,7 @@ h3 {
 
 p {
     margin: 10px 0;
+    font-size: 1.0em;
     text-indent: 20px;
 }
 
