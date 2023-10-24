@@ -131,7 +131,7 @@ i.fas, i.fab {
     justify-content: space-between; /* 두 열 사이에 공간을 만듭니다 */
     margin-bottom: 20px;  /* 이미지와 아래 텍스트 간의 간격 확보 */
     height: auto;  /* 높이를 자동으로 설정하여 내용에 맞게 조절합니다 */
-    flex-direction: column;  /* 내용을 수직으로 배열합니다 */
+    /* flex-direction: column;  내용을 수직으로 배열합니다 */
     align-items: left;  /* 내용을 수평 중앙으로 정렬합니다 */
     margin-left: 20px; /* 이미지를 오른쪽으로 20px 밀기 */
 }
@@ -154,7 +154,7 @@ p {
 .profile-image img {
     position: relative;  /* 이미지의 위치를 조절합니다. */
     margin-right: 200px; /* 이미지만 오른쪽으로 40px 밀었습니다 */
-    width: 800px;
+    width: 600px;
     height: auto;
     object-fit: cover;
     border-radius: 10%; /* 원형 이미지를 만듭니다 */
