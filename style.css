@@ -129,11 +129,11 @@ i.fas, i.fab {
 .profile-container {
     display: flex; /* Flexbox를 사용하여 두 열을 나란히 배치합니다 */
     justify-content: space-between; /* 두 열 사이에 공간을 만듭니다 */
-    margin-bottom: 200px;  /* 이미지와 아래 텍스트 간의 간격 확보 */
+    margin-bottom: 20px;  /* 이미지와 아래 텍스트 간의 간격 확보 */
     height: auto;  /* 높이를 자동으로 설정하여 내용에 맞게 조절합니다 */
     flex-direction: column;  /* 내용을 수직으로 배열합니다 */
     align-items: left;  /* 내용을 수평 중앙으로 정렬합니다 */
-    margin-left: 20px; /* 이미지를 오른쪽으로 20px 밀기 */
+    margin-left: 200px; /* 이미지를 오른쪽으로 20px 밀기 */
 }
 
 p {
