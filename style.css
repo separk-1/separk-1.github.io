@@ -12,11 +12,13 @@ header {
     color: #F8F8F8;
     padding: 10px 20px;
     text-align: left;
+    font-size: 2.0em;
     padding-top: 80px;  /* 메뉴 아이콘 공간 확보를 위한 패딩 추가 */
 }
 
 header h1 {
     margin: 0;
+    font-size: 1.8em;
 }
 
 header p {
