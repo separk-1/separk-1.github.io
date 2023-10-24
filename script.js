@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
     //     requestAnimationFrame(animate);
     // }
     // animate();
-    
+
     // Project details toggle
     const toggleIcons = document.querySelectorAll('.toggle-icon');
     toggleIcons.forEach(icon => {
@@ -82,6 +82,16 @@ document.addEventListener('DOMContentLoaded', function() {
             icon.classList.toggle('fa-chevron-up');
         });
     });
+
+    document.getElementById("toggleButton").addEventListener("click", function() {
+    var videoDiv = document.getElementById("youtubeVideo");
+    if (videoDiv.style.display === "none") {
+        videoDiv.style.display = "block";
+    } else {
+        videoDiv.style.display = "none";
+    }
+});
+
 
     
     // Image link popup

@@ -81,6 +81,8 @@ footer {
     bottom: 0;
 }
 
+
+
 #navbar {
     background: linear-gradient(to right, #333, #494848);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
