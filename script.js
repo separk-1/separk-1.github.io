@@ -27,10 +27,12 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
     });
-
-    document.getElementById("backToTop").addEventListener("click", function() {
+    function scrollToTop() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
+    }
+    
+    document.getElementById("backToTopLeft").addEventListener("click", scrollToTop);
+    document.getElementById("backToTopRight").addEventListener("click", scrollToTop);    
 
     // Image rotation
     // const imageContainer = document.querySelector('.profile-container'); 
