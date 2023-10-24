@@ -66,15 +66,18 @@ document.addEventListener('DOMContentLoaded', function() {
     // Project details toggle
     const toggleIcons = document.querySelectorAll('.toggle-icon');
     toggleIcons.forEach(icon => {
+        const detail = icon.nextElementSibling.nextElementSibling;
+        detail.classList.add('open');  // 초기 상태를 열린 상태로 설정
+        icon.classList.add('fa-chevron-up');
+        icon.classList.remove('fa-chevron-down');
+    
         icon.addEventListener('click', function () {
-            const detail = this.nextElementSibling.nextElementSibling;
-            detail.classList.add('open');  // 초기 상태를 열린 상태로 설정
             detail.classList.toggle('open');
-            this.classList.toggle('fa-chevron-down');
-            this.classList.toggle('fa-chevron-up');
+            icon.classList.toggle('fa-chevron-down');
+            icon.classList.toggle('fa-chevron-up');
         });
     });
-
+    
     // Image link popup
     const imageLinks = document.querySelectorAll('.image-link');
     imageLinks.forEach(link => {
