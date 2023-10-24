@@ -71,9 +71,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Project details toggle
     const toggleIcons = document.querySelectorAll('.toggle-icon');
     toggleIcons.forEach(icon => {
-        const detail = icon.nextElementSibling.nextElementSibling.nextElementSibling; // 여기를 수정
-        icon.classList.add('fa-chevron-up');
-        icon.classList.remove('fa-chevron-down');
+        const detail = icon.nextElementSibling.nextElementSibling; // 바로 다음 요소의 다음 요소를 참조
+        detail.classList.remove('open'); // 초기 상태에서 'open' 클래스 제거
+        icon.classList.add('fa-chevron-down'); // 초기 상태를 'fa-chevron-down'으로 설정
+        icon.classList.remove('fa-chevron-up'); // 'fa-chevron-up' 클래스 제거
     
         icon.addEventListener('click', function () {
             detail.classList.toggle('open');
