@@ -103,6 +103,7 @@ footer {
 }
 
 #navbar ul li a {
+    font-size: 2.0 rem;
     padding: 20px 15px; /* 패딩 조정 */
     transition: background-color 0.3s, color 0.3s; /* 부드러운 색상 전환 효과 */
     display: block;
