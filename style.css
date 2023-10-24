@@ -133,6 +133,7 @@ i.fas, i.fab {
     height: auto;  /* 높이를 자동으로 설정하여 내용에 맞게 조절합니다 */
     flex-direction: column;  /* 내용을 수직으로 배열합니다 */
     align-items: left;  /* 내용을 수평 중앙으로 정렬합니다 */
+    margin-left: 20px; /* 이미지를 오른쪽으로 20px 밀기 */
 }
 
 p {
