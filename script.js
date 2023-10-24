@@ -66,8 +66,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // Project details toggle
     const toggleIcons = document.querySelectorAll('.toggle-icon');
     toggleIcons.forEach(icon => {
-        const detail = icon.nextElementSibling.nextElementSibling.nextElementSibling; // 여기를 수정
-        detail.classList.add('open');
+        const detail = icon.nextElementSibling.nextElementSibling;
+        detail.classList.add('open');  // 초기 상태를 열린 상태로 설정
         icon.classList.add('fa-chevron-up');
         icon.classList.remove('fa-chevron-down');
     

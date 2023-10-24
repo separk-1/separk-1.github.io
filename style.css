@@ -157,7 +157,7 @@ p {
     width: 200px;
     height: auto;
     object-fit: cover;
-    border-radius: 50%; /* 원형 이미지를 만듭니다 */
+    border-radius: 80%; /* 원형 이미지를 만듭니다 */
     transition: opacity 1s ease-in-out;  /* 부드러운 변환 효과 */
 }
 
