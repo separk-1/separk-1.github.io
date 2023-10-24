@@ -5,7 +5,7 @@ body {
     background-color: #f8f8f8;
     color: #333;
     line-height: 1.6;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
 }
 
 header {
@@ -13,7 +13,7 @@ header {
     color: #F8F8F8;
     padding: 10px 20px;
     text-align: left;
-    font-size: 1.2rem;
+    font-size: 2.0rem;
     padding-top: 80px;  /* 메뉴 아이콘 공간 확보를 위한 패딩 추가 */
 }
 
@@ -37,16 +37,16 @@ section {
 
 
 h2 {
-    font-size: 1.5em;
+    font-size: 1.8em;
 }
 
 h3 {
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 p {
     margin: 10px 0;
-    font-size: 1.0rem;
+    font-size: 1.2rem;
     text-indent: 20px;
 }
 
@@ -104,7 +104,7 @@ footer {
 }
 
 #navbar ul li a {
-    font-size: 2.0rem;
+    font-size: 1.5rem;
     padding: 20px 15px; /* 패딩 조정 */
     transition: background-color 0.3s, color 0.3s; /* 부드러운 색상 전환 효과 */
     display: block;
