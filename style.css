@@ -5,7 +5,7 @@ body {
     background-color: #f8f8f8;
     color: #333;
     line-height: 1.6;
-    font-size: 1.5rem;
+    font-size: 0.8rem;
 }
 
 header {
@@ -13,7 +13,7 @@ header {
     color: #F8F8F8;
     padding: 10px 20px;
     text-align: left;
-    font-size: 2.0rem;
+    font-size: 1.2rem;
     padding-top: 80px;  /* 메뉴 아이콘 공간 확보를 위한 패딩 추가 */
 }
 
@@ -37,7 +37,7 @@ section {
 
 
 h2 {
-    font-size: 2.0em;
+    font-size: 1.5em;
 }
 
 h3 {
