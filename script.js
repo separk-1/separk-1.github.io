@@ -31,7 +31,6 @@ document.addEventListener('DOMContentLoaded', function() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
     
-    document.getElementById("backToTopLeft").addEventListener("click", scrollToTop);
     document.getElementById("backToTopRight").addEventListener("click", scrollToTop);    
 
     // Image rotation
