@@ -27,6 +27,11 @@ header p {
 
 }
 
+.gray-text {
+    color: #4b4a4a;
+}
+
+
 
 section {
     background-color: #f8f8f8;  /* 배경색 */
@@ -247,10 +252,12 @@ p {
     max-height: 1500px;
     overflow: hidden;
     transition: max-height 0.5s ease-out;
+    display: none; 
 }
 
 .project-detail.open {
     max-height: 1500px;
+    display: block; 
 }
 
 #command-window {

@@ -67,21 +67,22 @@ document.addEventListener('DOMContentLoaded', function() {
     //     requestAnimationFrame(animate);
     // }
     // animate();
-
+    
     // Project details toggle
     const toggleIcons = document.querySelectorAll('.toggle-icon');
     toggleIcons.forEach(icon => {
-        const detail = icon.nextElementSibling.nextElementSibling; // 바로 다음 요소의 다음 요소를 참조
-        detail.classList.remove('open'); // 초기 상태에서 'open' 클래스 제거
-        icon.classList.add('fa-chevron-down'); // 초기 상태를 'fa-chevron-down'으로 설정
-        icon.classList.remove('fa-chevron-up'); // 'fa-chevron-up' 클래스 제거
-    
+        const detail = icon.nextElementSibling.nextElementSibling; // 수정된 부분
+        detail.classList.remove('open'); // 기본 상태를 닫힌 상태로 설정
+        icon.classList.remove('fa-chevron-up');
+        icon.classList.add('fa-chevron-down');
+
         icon.addEventListener('click', function () {
             detail.classList.toggle('open');
             icon.classList.toggle('fa-chevron-down');
             icon.classList.toggle('fa-chevron-up');
         });
     });
+
     
     // Image link popup
     const imageLinks = document.querySelectorAll('.image-link');
