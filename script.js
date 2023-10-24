@@ -28,6 +28,10 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    document.getElementById("backToTop").addEventListener("click", function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
     // Image rotation
     // const imageContainer = document.querySelector('.profile-container'); 
     // imageContainer.addEventListener('mousedown', function(e) {
