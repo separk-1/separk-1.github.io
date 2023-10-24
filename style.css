@@ -77,10 +77,10 @@ footer {
 }
 
 #navbar {
-    background: linear-gradient(to right, #0066ff, #6ec6ff);
+    background: linear-gradient(to right, #d07c62, #d9b8a7);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
     z-index: 1000;
-    background-color: #333;
+    background-color: #d07c62;
     position: fixed;
     width: 100%;
     top: 0;
