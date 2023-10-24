@@ -215,6 +215,12 @@ p {
     object-fit: contain;
 }
 
+.custom-image2 {
+    width: 800px;
+    height: auto;
+    object-fit: contain;
+}
+
 .project-title {
     display: inline-block;
     margin: 0;
