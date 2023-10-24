@@ -142,7 +142,6 @@ p {
 
 .profile-info {
     flex: 1; /* 두 열이 동일한 너비를 가지도록 합니다 */
-    padding-right: 20px; /* 이미지와의 간격을 만듭니다 */
     order: 2;
 }
 
