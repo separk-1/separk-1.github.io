@@ -243,7 +243,7 @@ p {
 }
 
 .project-detail {
-    max-height: 0;
+    max-height: 1500px;
     overflow: hidden;
     transition: max-height 0.5s ease-out;
 }

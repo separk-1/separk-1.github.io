@@ -68,6 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
     toggleIcons.forEach(icon => {
         icon.addEventListener('click', function () {
             const detail = this.nextElementSibling.nextElementSibling;
+            detail.classList.add('open');  // 초기 상태를 열린 상태로 설정
             detail.classList.toggle('open');
             this.classList.toggle('fa-chevron-down');
             this.classList.toggle('fa-chevron-up');
