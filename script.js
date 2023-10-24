@@ -29,39 +29,39 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Image rotation
-    const imageContainer = document.querySelector('.profile-container'); 
-    imageContainer.addEventListener('mousedown', function(e) {
-        isDragging = true;
-    });
+    // const imageContainer = document.querySelector('.profile-container'); 
+    // imageContainer.addEventListener('mousedown', function(e) {
+    //     isDragging = true;
+    // });
 
-    document.addEventListener('mousemove', function(e) {
-        if (isDragging) {
-            const mouseMove = e.movementX;
-            rotationSpeed += mouseMove * 0.5;
-        }
-    });
+    // document.addEventListener('mousemove', function(e) {
+    //     if (isDragging) {
+    //         const mouseMove = e.movementX;
+    //         rotationSpeed += mouseMove * 0.5;
+    //     }
+    // });
 
-    document.addEventListener('mouseup', function() {
-        isDragging = false;
-    });
+    // document.addEventListener('mouseup', function() {
+    //     isDragging = false;
+    // });
 
-    image.addEventListener('click', function() {
-        rotationSpeed = 0;
-        rotation = 0;
-        image.style.transition = 'transform 0.5s ease-out';
-        image.style.transform = 'rotate(' + rotation + 'deg)';
-        setTimeout(() => {
-            image.style.transition = '';
-        }, 1000);
-    });
+    // image.addEventListener('click', function() {
+    //     rotationSpeed = 0;
+    //     rotation = 0;
+    //     image.style.transition = 'transform 0.5s ease-out';
+    //     image.style.transform = 'rotate(' + rotation + 'deg)';
+    //     setTimeout(() => {
+    //         image.style.transition = '';
+    //     }, 1000);
+    // });
     
-    function animate() {
-        rotation += rotationSpeed;
-        rotationSpeed *= friction;
-        image.style.transform = 'rotate(' + rotation + 'deg)';
-        requestAnimationFrame(animate);
-    }
-    animate();
+    // function animate() {
+    //     rotation += rotationSpeed;
+    //     rotationSpeed *= friction;
+    //     image.style.transform = 'rotate(' + rotation + 'deg)';
+    //     requestAnimationFrame(animate);
+    // }
+    // animate();
 
     // Project details toggle
     const toggleIcons = document.querySelectorAll('.toggle-icon');
