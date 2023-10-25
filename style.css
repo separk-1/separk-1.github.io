@@ -233,7 +233,7 @@ p {
 }
 
 .custom-image {
-    width: 1500px;
+    width: 1000px;
     height: auto;
     object-fit: contain;
 }
