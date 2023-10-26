@@ -205,6 +205,10 @@ p {
         font-size: 1rem; 
     }
     
+    #navbar {
+        display: none; /* 네비게이션 바 숨김 */
+      }
+      
     li, #navbar ul li a {
         font-size: 1rem;
     }
