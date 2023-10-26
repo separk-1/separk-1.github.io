@@ -46,6 +46,7 @@ section {
 
 h2 {
     font-size: 1.8em;
+    color: #00274c;
 }
 
 h3 {
@@ -53,6 +54,7 @@ h3 {
 }
 
 p {
+    padding-left: 30px;
     margin: 10px 0;
     font-size: 1.2rem;
     text-indent: 0;
@@ -207,7 +209,6 @@ p {
 
     p{
         font-size: 1rem; 
-        padding-left: 30px;
     }
     
     li, #navbar ul li a {
