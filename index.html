@@ -39,6 +39,14 @@
         <button onclick="document.getElementById('mobileAlert').style.display='none'">Close</button>
     </div>
 
+    <script>
+        window.onload = function() {
+            if (window.innerWidth <= 600) {
+                document.getElementById('mobileAlert').style.display = 'block';
+            }
+        }
+    </script>
+
     <section id="introduction">
         <div class="profile-container">
             <div class="profile-image">

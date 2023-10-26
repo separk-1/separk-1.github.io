@@ -33,6 +33,12 @@ document.addEventListener('DOMContentLoaded', function() {
     
     document.getElementById("backToTopRight").addEventListener("click", scrollToTop);    
 
+    window.onload = function() {
+        if (window.innerWidth <= 600) {
+            document.getElementById('mobileAlert').style.display = 'block';
+        }
+    }
+    
     // Image rotation
     // const imageContainer = document.querySelector('.profile-container'); 
     // imageContainer.addEventListener('mousedown', function(e) {
