@@ -107,6 +107,7 @@ footer {
 #navbar ul li {
     transition: transform 0.3s; /* 부드러운 이동 효과 */
     float: left;
+    margin-right: 20px; /* 오른쪽 마진 추가 */
 }
 
 #navbar ul li:hover {
