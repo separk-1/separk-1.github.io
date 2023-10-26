@@ -127,7 +127,6 @@ footer {
     /* background-color: #f8f8f8; 호버 시 배경색 */
     /* color: black; 호버 시 글자색 */
     color: #ffcf01; 
-    background-color: #00274c;
 }
 
 #navbar a[href="#introduction"]:hover {
