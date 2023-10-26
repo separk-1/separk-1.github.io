@@ -178,9 +178,6 @@ p {
     #mobileAlert {
         display: block;
     }
-    body {
-        font-size: 14px; /* 글씨 크기 조정 */
-    }
     .profile-image, .custom-image, .custom-image2 {
         width: 80%; /* 이미지 크기 조정 */
         margin: 0 auto; /* 이미지 중앙 정렬 */
@@ -188,6 +185,7 @@ p {
     nav li {
         float: none;
         width: 100%;
+        display: none;  /* 기본적으로 메뉴 항목을 숨깁니다 */
     }
 
     .profile-container img {
@@ -198,7 +196,13 @@ p {
     .image-link {
         display: block;
     }
+    
+    nav .menu-icon {
+        display: block;  /* 햄버거 메뉴 아이콘을 표시합니다 */
+        cursor: pointer;
+    }
 }
+
     
 /* 태블릿 스타일 */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
@@ -210,26 +214,6 @@ p {
     .profile-container img {
         max-width: 100%;
         height: auto;
-    }
-}
-
-/* 데스크탑 스타일 */
-@media only screen and (min-width: 1025px) {
-    .profile-container img {
-        max-width: 50%;
-        height: auto;
-    }
-}
-
-/* 모바일 환경에서의 스타일 */
-@media only screen and (max-width: 600px) {
-    nav li {
-        display: none;  /* 기본적으로 메뉴 항목을 숨깁니다 */
-    }
-
-    nav .menu-icon {
-        display: block;  /* 햄버거 메뉴 아이콘을 표시합니다 */
-        cursor: pointer;
     }
 }
 
