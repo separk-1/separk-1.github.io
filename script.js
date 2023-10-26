@@ -15,17 +15,6 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     });
-
-    document.querySelector('.menu-icon').addEventListener('click', function() {
-        var navItems = document.querySelectorAll('#navbar ul li');
-        navItems.forEach(function(item) {
-            if (item.style.display === 'none' || item.style.display === '') {
-                item.style.display = 'block';
-            } else {
-                item.style.display = 'none';
-            }
-        });
-    });
     
     function scrollToTop() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
