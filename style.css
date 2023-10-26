@@ -112,10 +112,6 @@ footer {
     margin-right: 20px; /* 오른쪽 마진 추가 */
 }
 
-#navbar ul li:hover {
-    font-weight: bold;
-}
-
 #navbar ul li a {
     font-size: 1.2rem;
     padding: 15px 15px; /* 패딩 조정 */
@@ -133,12 +129,10 @@ footer {
     background-color: #ddd;
 }
 
-#navbar a[href="#introduction"] {
-    color: #ffcf01; /* 노란색 */
-}
-
 #navbar a[href="#introduction"]:hover {
-    color: black; /* 호버 시 검정색 */
+    color: ffcf01; /* 호버 시 검정색 */
+    font-weight: bold;
+    background-color: #00274c;
 }
 
 
