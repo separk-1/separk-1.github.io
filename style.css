@@ -32,11 +32,11 @@ header p {
 }
 
 .yellowLink {
-    color: yellow;
+    color: #ffcf01 !important;
 }
 
 .yellowLink:hover {
-    color: black;
+    color: black !important;
 }
 
 
