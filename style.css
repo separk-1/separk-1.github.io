@@ -216,11 +216,12 @@ p {
     .email-info {
         display: none;
     }
+
     .gray-text {
+        padding-left: 0ch;
         color: #7c7c7c;
     }
     
-
     #mobileAlert {
         display: block;
     }
