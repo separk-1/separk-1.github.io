@@ -201,6 +201,10 @@ p {
         display: block;  /* 햄버거 메뉴 아이콘을 표시합니다 */
         cursor: pointer;
     }
+
+    img {
+        display: none;  /* 모든 이미지를 숨깁니다 */
+    }
 }
 
     
