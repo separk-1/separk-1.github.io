@@ -174,7 +174,27 @@ p {
 
 
 /* 모바일 스타일 */
-@media only screen and (max-width: 600px) {    
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 1rem; /* 기본 글꼴 크기 조정 */
+    }
+    
+    header {
+        font-size: 1.6rem; /* 헤더 글꼴 크기 조정 */
+    }
+    
+    h2 {
+        font-size: 1.4em; /* h2 태그 글꼴 크기 조정 */
+    }
+
+    h3 {
+        font-size: 1em; /* h3 태그 글꼴 크기 조정 */
+    }
+
+    p, li, #navbar ul li a {
+        font-size: 1rem; /* p, li, 네비게이션 링크 글꼴 크기 조정 */
+    }
+    
     #mobileAlert {
         display: block;
     }
