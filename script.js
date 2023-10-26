@@ -16,17 +16,17 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Mobile menu toggle
     document.querySelector('.menu-icon').addEventListener('click', function() {
-        var navItems = document.querySelectorAll('nav li');
-        for (var i = 1; i < navItems.length; i++) {  
-            if (navItems[i].style.display === 'block') {
-                navItems[i].style.display = 'none';
+        var navItems = document.querySelectorAll('#navbar ul li');
+        navItems.forEach(function(item) {
+            if (item.style.display === 'none' || item.style.display === '') {
+                item.style.display = 'block';
             } else {
-                navItems[i].style.display = 'block';
+                item.style.display = 'none';
             }
-        }
+        });
     });
+    
     function scrollToTop() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
