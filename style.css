@@ -86,7 +86,7 @@ footer {
 
 
 #navbar {
-    background: linear-gradient(to right, #333, #494848);
+    background: linear-gradient(to right, #00274c, #2d4458);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
     z-index: 1000;
     background-color: #333;
@@ -124,7 +124,7 @@ footer {
 }
 
 #navbar ul li a:hover {
-    background-color: #ffffff; /* 호버 시 배경색 */
+    background-color: #ffcf01; /* 호버 시 배경색 */
     color: #333; /* 호버 시 글자색 */
     background-color: #ddd;
     color: black;
