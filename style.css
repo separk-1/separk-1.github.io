@@ -195,10 +195,6 @@ p {
         height: auto;
     }
 
-    .custom-image {
-        display: none;
-    }
-
     .image-link {
         display: block;
     }
