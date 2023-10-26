@@ -216,6 +216,10 @@ p {
     .email-info {
         display: none;
     }
+    .gray-text {
+        color: #7c7c7c;
+    }
+    
 
     #mobileAlert {
         display: block;
