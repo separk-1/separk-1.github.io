@@ -239,13 +239,13 @@ p {
 }
 
 .custom-image {
-    width: 1000px;
+    width: 80%;
     height: auto;
     object-fit: contain;
 }
 
 .custom-image2 {
-    width: 900px;
+    width: 80%;
     height: auto;
     object-fit: contain;
 }
