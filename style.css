@@ -179,6 +179,9 @@ p {
 @media only screen and (max-width: 600px) {
     body {
         font-size: 1rem; /* 기본 글꼴 크기 조정 */
+        padding-left: 5px;  /* 좌측 패딩 조정 */
+        padding-right: 5px; /* 우측 패딩 조정 */
+    }
     }
     
     header {
