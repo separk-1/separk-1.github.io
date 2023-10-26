@@ -130,7 +130,7 @@ footer {
 }
 
 #navbar a[href="#introduction"]:hover {
-    color: ffcf01; /* 호버 시 검정색 */
+    color: #ffcf01; 
     font-weight: bold;
     background-color: #00274c;
 }
