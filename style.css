@@ -243,7 +243,7 @@ p {
         display: block;
     }
     .profile-image, .custom-image, .custom-image2 {
-        width: 80%; /* 이미지 크기 조정 */
+        /* width: 80%; 이미지 크기 조정 */
         margin: 0 auto; /* 이미지 중앙 정렬 */
     }
     nav li {
@@ -286,13 +286,13 @@ p {
 }
 
 .custom-image {
-    width: 80%;
+    width: 60%;
     height: auto;
     object-fit: contain;
 }
 
 .custom-image2 {
-    width: 60%;
+    width: 40%;
     height: auto;
     object-fit: contain;
 }
