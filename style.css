@@ -31,7 +31,9 @@ header p {
     color: #6d6c6c;
 }
 
-
+*, *::before, *::after {
+    box-sizing: border-box;
+}
 
 section {
     background-color: #f8f8f8;  /* 배경색 */
@@ -194,7 +196,12 @@ p {
     p, li, #navbar ul li a {
         font-size: 1rem; /* p, li, 네비게이션 링크 글꼴 크기 조정 */
     }
-    
+
+    .profile-image img {
+        margin-right: 0;  /* 마진 제거 */
+        width: 100%;      /* 이미지 너비 조정 */
+    }
+
     #mobileAlert {
         display: block;
     }
