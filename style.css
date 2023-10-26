@@ -38,7 +38,7 @@ header p {
 
 section {
     background-color: #f8f8f8;  /* 배경색 */
-    margin: 20px 0;  /* 상하 마진 */
+    margin: 30px 0;  /* 상하 마진 */
     padding: 50px;  /* 패딩 */
     border-radius: 8px;  /* 모서리 둥글게 */
 }
@@ -109,7 +109,7 @@ footer {
 #navbar ul li {
     transition: transform 0.3s; /* 부드러운 이동 효과 */
     float: left;
-    margin-right: 20px; /* 오른쪽 마진 추가 */
+    margin-right: 40px; /* 오른쪽 마진 추가 */
 }
 
 #navbar ul li a {
