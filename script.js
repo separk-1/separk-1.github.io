@@ -78,16 +78,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    document.getElementById("toggleButton").addEventListener("click", function() {
-    var videoDiv = document.getElementById("youtubeVideo");
-    if (videoDiv.style.display === "none") {
-        videoDiv.style.display = "block";
-    } else {
-        videoDiv.style.display = "none";
-    }
-});
-
-
     
     // Image link popup
     const imageLinks = document.querySelectorAll('.image-link');
