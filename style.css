@@ -220,6 +220,7 @@ p {
     .gray-text {
         padding-left: 0ch;
         color: #7c7c7c;
+        font-size: 0.8rem;
     }
     
     #mobileAlert {
@@ -242,11 +243,6 @@ p {
 
     .image-link {
         display: block;
-    }
-    
-    nav .menu-icon {
-        display: block;  /* 햄버거 메뉴 아이콘을 표시합니다 */
-        cursor: pointer;
     }
 
     img:not(.profile-image) {
