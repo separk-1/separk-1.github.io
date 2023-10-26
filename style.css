@@ -31,14 +31,6 @@ header p {
     color: #6d6c6c;
 }
 
-.yellowLink {
-    color: #ffcf01 !important;
-}
-
-.yellowLink:hover {
-    color: black !important;
-}
-
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -328,4 +320,12 @@ p {
 
 .hidden {
     opacity: 0;
+}
+
+.yellowLink {
+    color: #ffcf01 
+}
+
+.yellowLink:hover {
+    color: black 
 }
