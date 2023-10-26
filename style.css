@@ -124,9 +124,9 @@ footer {
 }
 
 #navbar ul li a:hover {
-    background-color: #ffcf01; /* 호버 시 배경색 */
-    color: #333; /* 호버 시 글자색 */
-    background-color: #ddd;
+    background-color: #f8f8f8; /* 호버 시 배경색 */
+    color: #ffcf01; /* 호버 시 글자색 */
+    background-color: #f8f8f8;
     color: black;
 }
 
