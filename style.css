@@ -203,12 +203,11 @@ p {
 
     h3 {
         font-size: 1em; /* h3 태그 글꼴 크기 조정 */
-        padding-left: 20px;
     }
 
     p{
         font-size: 1rem; 
-        padding-left: 40px;
+        padding-left: 30px;
     }
     
     li, #navbar ul li a {
