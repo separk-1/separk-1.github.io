@@ -213,6 +213,9 @@ p {
         margin-right: 0;  /* 마진 제거 */
         width: 100%;      /* 이미지 너비 조정 */
     }
+    .email-info {
+        display: none;
+    }
 
     #mobileAlert {
         display: block;
