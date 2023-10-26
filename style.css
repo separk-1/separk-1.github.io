@@ -202,7 +202,7 @@ p {
         cursor: pointer;
     }
 
-    img {
+    img:not(.profile-image) {
         display: none;  /* 모든 이미지를 숨깁니다 */
     }
 }
