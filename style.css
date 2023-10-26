@@ -174,7 +174,17 @@ p {
 
 
 /* 모바일 스타일 */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {    
+    #mobileAlert {
+        display: block;
+    }
+    body {
+        font-size: 14px; /* 글씨 크기 조정 */
+    }
+    .profile-image, .custom-image, .custom-image2 {
+        width: 80%; /* 이미지 크기 조정 */
+        margin: 0 auto; /* 이미지 중앙 정렬 */
+    }
     nav li {
         float: none;
         width: 100%;
