@@ -368,3 +368,11 @@ p {
     background-color: #555;  /* 마우스 오버 시 버튼 배경색 */
 }
 
+/* 네비게이션 바의 CV 항목 스타일링 */
+.cv-item {
+    margin-left: auto; /* 오른쪽 끝에 위치 */
+}
+
+.cv-item a {
+    color: #879bad; /* 텍스트 색상 설정 */
+}rgb(255, 255, 255)
