@@ -351,3 +351,12 @@ p {
 .hidden {
     opacity: 0;
 }
+
+.slick-prev, .slick-next {
+    font-size: 20px;
+    color: #333;
+}
+
+.slick-prev:hover, .slick-next:hover {
+    color: #555;
+}

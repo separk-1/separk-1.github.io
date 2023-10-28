@@ -53,3 +53,16 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+$(document).ready(function(){
+    $('.image-slider').slick({
+        dots: false, // 점 제거
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true,
+        prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>', // 이전 버튼 아이콘 설정
+        nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>'  // 다음 버튼 아이콘 설정
+    });
+});
+
