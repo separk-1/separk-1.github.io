@@ -376,3 +376,22 @@ p {
 .cv-item a {
     color: #879bad; /* 텍스트 색상 설정 */
 }
+
+.custom-slick-next {
+    font-size: 40px;  /* 버튼 크기 조정 */
+    position: absolute;  /* 절대 위치 지정 */
+    top: 50%;  /* 상위 요소의 중앙에 버튼 위치 */
+    right: -50px;  /* 이미지 우측에 버튼 위치 */
+    transform: translateY(-50%);  /* 버튼을 수직으로 중앙 정렬 */
+    background-color: rgba(0, 0, 0, 0.5);  /* 버튼 배경색 (반투명한 검은색) */
+    color: #fff;  /* 버튼 색상 (흰색) */
+    border: none;  /* 테두리 제거 */
+    border-radius: 50%;  /* 버튼 모서리 둥글게 */
+    padding: 10px;  /* 버튼 내부 여백 */
+    cursor: pointer;  /* 마우스 포인터 모양 변경 */
+    z-index: 1000;  /* 다른 요소 위에 버튼 표시 */
+}
+
+.custom-slick-next:hover {
+    background-color: rgba(0, 0, 0, 0.7);  /* 마우스 오버 시 버튼 배경색 조정 */
+}
