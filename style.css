@@ -352,9 +352,11 @@ p {
     opacity: 0;
 }
 
+.slick-prev {
+    display: none;
+}
+
 .slick-next {
-    background-color: #333;  /* 버튼 배경색 */
-    color: #fff;             /* 버튼 텍스트 또는 아이콘 색상 */
     border-radius: 50%;      /* 버튼 모서리 둥글게 */
     width: 30px;             /* 버튼 너비 */
     height: 30px;            /* 버튼 높이 */
@@ -380,7 +382,7 @@ p {
 .custom-slick-next {
     font-size: 80px;  /* 버튼 크기 조정 */
     position: absolute;  /* 절대 위치 지정 */
-    top: 10%;  /* 상위 요소의 중앙에 버튼 위치 */
+    top: 90%;  /* 상위 요소의 중앙에 버튼 위치 */
     right: -50px;  /* 이미지 바로 오른쪽에 버튼 위치 (값을 조정하여 왼쪽으로 당길 수 있습니다) */
     transform: translateY(-50%);  /* 버튼을 수직으로 중앙 정렬 */
     background-color: rgba(0, 0, 0, 0);  /* 버튼 배경색 (반투명한 검은색) */
@@ -393,5 +395,5 @@ p {
 }
 
 .custom-slick-next:hover {
-    background-color: rgba(0, 0, 0, 0.7);  /* 마우스 오버 시 버튼 배경색 조정 */
+    color: #666666;  /* 버튼 색상 (흰색) */
 }
