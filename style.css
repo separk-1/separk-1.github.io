@@ -340,7 +340,7 @@ p {
     transform: translateY(-50%); /* 버튼을 수직으로 중앙 정렬 */
     border-radius: 50%;      /* 버튼 모서리 둥글게 */
     width: 30px;             /* 버튼 너비 */
-    height: 400px;            /* 버튼 높이 */
+    height: 30px;            /* 버튼 높이 */
     line-height: 30px;       /* 버튼 텍스트 수직 정렬 */
     text-align: center;      /* 버튼 텍스트 수평 정렬 */
     color: #333;
