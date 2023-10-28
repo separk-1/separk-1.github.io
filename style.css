@@ -315,23 +315,6 @@ p {
     display: block; 
 }
 
-#command-window {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 10px;
-    border-radius: 5px;
-}
-
-#command-input {
-    width: 200px;
-    padding: 5px;
-    color: #fff;
-    background-color: transparent;
-    border: 1px solid #fff;
-    border-radius: 3px;
-}
 
 @keyframes fadeOut {
     from {opacity: 1;}
@@ -363,8 +346,8 @@ p {
     color: #333;
     background-color: #f8f8f8;
     font-size: 80px;  /* 버튼 크기 조정 */
-    top: 90%;  /* 상위 요소의 중앙에 버튼 위치 */
-    right: 100px;  /* 이미지 바로 오른쪽에 버튼 위치 (값을 조정하여 왼쪽으로 당길 수 있습니다) */
+    top: 50%;  /* 상위 요소의 중앙에 버튼 위치 */
+    right: 400px;  /* 이미지 바로 오른쪽에 버튼 위치 (값을 조정하여 왼쪽으로 당길 수 있습니다) */
     z-index: 1000;  /* 다른 요소 위에 버튼 표시 */
     border: none;  
 }
