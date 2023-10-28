@@ -302,9 +302,8 @@
 
 
     <script src="script.js" defer></script>
-
+    
     <script type="text/javascript">
-
         $(document).ready(function(){
             $('.image-slider').slick({
                 dots: false, // 점 제거
@@ -312,11 +311,12 @@
                 speed: 300,
                 slidesToShow: 1,
                 adaptiveHeight: true,
-                prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>', // 이전 버튼 아이콘 설정
-                nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>'  // 다음 버튼 아이콘 설정
+                prevArrow: '<button type="button" class="custom-slick-prev">←</button>', // 사용자 정의 이전 버튼
+                nextArrow: '<button type="button" class="custom-slick-next">→</button>'  // 사용자 정의 다음 버튼
             });
         });
     </script>
+    
     
 
 

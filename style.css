@@ -353,10 +353,18 @@ p {
 }
 
 .slick-prev, .slick-next {
-    font-size: 20px;
-    color: #333;
+    background-color: #333;  /* 버튼 배경색 */
+    color: #fff;             /* 버튼 텍스트 또는 아이콘 색상 */
+    border-radius: 50%;      /* 버튼 모서리 둥글게 */
+    width: 30px;             /* 버튼 너비 */
+    height: 30px;            /* 버튼 높이 */
+    font-size: 20px;         /* 버튼 텍스트 크기 */
+    line-height: 30px;       /* 버튼 텍스트 수직 정렬 */
+    text-align: center;      /* 버튼 텍스트 수평 정렬 */
+    transition: background-color 0.3s; /* 배경색 변경 시 애니메이션 효과 */
 }
 
 .slick-prev:hover, .slick-next:hover {
-    color: #555;
+    background-color: #555;  /* 마우스 오버 시 버튼 배경색 */
 }
+
