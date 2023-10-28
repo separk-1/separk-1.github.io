@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const friction = 0.97;
 
     // Navbar smooth scrolling
-    document.querySelectorAll('#navbar a').forEach(anchor => {
+    document.querySelectorAll('#navbar a:not(.cv-item a)').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
             document.querySelector(this.getAttribute('href')).scrollIntoView({
