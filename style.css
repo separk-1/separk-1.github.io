@@ -381,7 +381,7 @@ p {
     font-size: 40px;  /* 버튼 크기 조정 */
     position: absolute;  /* 절대 위치 지정 */
     top: 50%;  /* 상위 요소의 중앙에 버튼 위치 */
-    right: -50px;  /* 이미지 우측에 버튼 위치 */
+    right: -20px;  /* 이미지 바로 오른쪽에 버튼 위치 (값을 조정하여 왼쪽으로 당길 수 있습니다) */
     transform: translateY(-50%);  /* 버튼을 수직으로 중앙 정렬 */
     background-color: rgba(0, 0, 0, 0.5);  /* 버튼 배경색 (반투명한 검은색) */
     color: #fff;  /* 버튼 색상 (흰색) */
