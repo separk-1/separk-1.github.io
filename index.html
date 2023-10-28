@@ -13,6 +13,14 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
+    <!-- Slick CSS 추가 -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <!-- Slick JS 및 그 종속성 (jQuery) 추가 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
 </head>
 <body>
     <nav id="navbar">
@@ -59,7 +67,6 @@
                 <p><b>Phone</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+821025723725</p>
                 <br>
                 <p>
-                    Welcome!<br>
                     I am a PhD student specializing in Architectural Engineering.<br>
                     This portfolio presents my academic journey and highlights my passion for AI-driven monitoring and automation in construction, especially in the realm of wearable and vision sensing technologies.
                 </p>
@@ -80,12 +87,12 @@
         <ul>
             <li>
                 <h3><i class="fas fa-check"></i>Wearable Sensing</h3>
-                <p>Variational AutoEncoder based Activity Recognition</p>
+                <p>Variational AutoEncoder, Activity Recognition</p>
             </li>
     
             <li>
                 <h3><i class="fas fa-check"></i>Computer Vision</h3>
-                <p>Convolutional Neural Networks, Transformers based Object Detection, Pose Estimation</p>
+                <p>Convolutional Neural Networks, Transformers, Object Detection, Pose Estimation</p>
             </li>
     
             <li>
@@ -95,7 +102,7 @@
     
             <li>
                 <h3><i class="fas fa-check"></i>Natural Language Processing</h3>
-                <p>Predicting safety incidents, Chatbots with construction data</p>
+                <p>Predicting safety incidents, Chatbots</p>
             </li>
         </ul>
     </section>
@@ -105,9 +112,9 @@
         <h3><i class="fas fa-check"></i>Master of Architectural Engineering</h3>
         <p>Mar. 2021 – Feb. 2023&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seoul National University
         <a href="https://cem.snu.ac.kr/" target="_blank">(SNUCEM)</a></p>
-        <p><span class = "gray-text">Merit-based Scholarship</span></p>
         <p><span class = "gray-text">Brain Korea 21 Plus Scholarship</span></p>
         <p><span class = "gray-text">Engineering Education Research Foundation (Architecture Alumni Association) Scholarship</span></p>
+        <p><span class = "gray-text">Merit-based Scholarship</span></p>
     
         
         <h3><i class="fas fa-check"></i>Bachelor of Architectural Engineering</h3>
@@ -260,7 +267,11 @@
     
     <section id="vision">
         <h2>Tackling Data Scarcity in Sensing for Construction Safety: Generation and Adaptation</h2>
-        <img src="images/idea.png" class="custom-image2" alt="vision">
+        <div class="image-slider">
+            <div><img src="images/idea1.png" class="custom-image2" alt="vision1"></div>
+            <div><img src="images/idea2.png" class="custom-image2" alt="vision2"></div>
+            <div><img src="images/idea3.png" class="custom-image2" alt="vision3"></div>
+        </div>
         <br>
         While conducting research on building large-scale datasets, I found that dataset generation took a lot of time and resources. <br>
         Therefore, for HAR based on IMU data, I am conducting research towards generating virtual humans using text to motion models such as motiondiffuse and collecting angular velocity/acceleration data of virtual humans. <br>
@@ -285,6 +296,20 @@
 
 
     <script src="script.js" defer></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+            $('.image-slider').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                adaptiveHeight: true
+            });
+        });
+    </script>
+    
 
 
 </body>
