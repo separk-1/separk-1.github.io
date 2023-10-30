@@ -53,6 +53,20 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+document.getElementById('send-btn').addEventListener('click', function() {
+    var message = document.getElementById('chat-input').value;
+    if (message) {
+        // 메시지를 chat-box에 추가
+        var chatBox = document.getElementById('chat-box');
+        chatBox.innerHTML += '<div class="user-message">' + message + '</div>';
+
+        // TODO: 서버에 메시지 전송
+
+        // 입력 필드 초기화
+        document.getElementById('chat-input').value = '';
+    }
+});
+
 
 
 
