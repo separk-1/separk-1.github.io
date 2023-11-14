@@ -184,7 +184,7 @@ p {
     width: 600px;
     height: auto;
     object-fit: cover;
-    border-radius: 10%; /* 원형 이미지를 만듭니다 */
+    border-radius: 0%; /* 원형 이미지를 만듭니다 */
     transition: opacity 1s ease-in-out;  /* 부드러운 변환 효과 */
 }
 
