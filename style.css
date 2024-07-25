@@ -337,6 +337,7 @@ p {
 
 .slick-next {
     position: absolute;      /* 절대 위치 지정 */
+    bottom: -30px;
     transform: translateY(-50%); /* 버튼을 수직으로 중앙 정렬 */
     border-radius: 50%;      /* 버튼 모서리 둥글게 */
     width: 30px;             /* 버튼 너비 */
@@ -351,7 +352,6 @@ p {
     z-index: 1000;  /* 다른 요소 위에 버튼 표시 */
     border: none;  
 }
-
 
 .slick-next:hover {
     color: #ffffff;  /* 버튼 색상 (흰색) */
