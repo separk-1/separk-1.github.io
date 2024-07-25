@@ -104,11 +104,11 @@ footer {
 #navbar {
     /*background: linear-gradient(to right, #00274c, #2d4458);*/
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
-    z-index: 1000;
+    z-index: 800;
     background-color: #B11226;
     position: fixed;
     width: 100%;
-    height: 40px;
+    height: 60px;
     top: 0;
     overflow: hidden;
 }
