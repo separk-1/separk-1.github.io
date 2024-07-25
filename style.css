@@ -181,7 +181,7 @@ p {
 .profile-image img {
     position: relative;  /* 이미지의 위치를 조절합니다. */
     margin-right: 200px; /* 이미지만 오른쪽으로 40px 밀었습니다 */
-    width: 450px;
+    width: 300px;
     height: auto;
     object-fit: cover;
     border-radius: 1%; /* 원형 이미지를 만듭니다 */
