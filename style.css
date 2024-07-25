@@ -139,7 +139,7 @@ footer {
 #navbar ul li a:hover {
     /* background-color: #f8f8f8; 호버 시 배경색 */
     /* color: black; 호버 시 글자색 */
-    color: #B11226; 
+    color: #888B8D; 
 }
 
 #navbar a[href="#introduction"]:hover {
