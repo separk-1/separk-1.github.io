@@ -354,10 +354,10 @@ p {
 
 
 .slick-next:hover {
-    color: #ffffff;  /* 버튼 색상 (흰색) */
+    color: #B11226;  /* 버튼 색상 (흰색) */
 }
 
 /* 네비게이션 바의 CV 항목 스타일링 */
 .cv-item a {
-    color: #ffffff; /* 텍스트 색상 설정 */
+    color: #888B8D; /* 텍스트 색상 설정 */
 }
