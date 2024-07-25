@@ -105,7 +105,7 @@ footer {
     /*background: linear-gradient(to right, #00274c, #2d4458);*/
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
     z-index: 1000;
-    background-color: #2C2A29;
+    background-color: #B11226;
     position: fixed;
     width: 100%;
     height: 60px; /* 네비게이션 바의 높이를 50px로 설정 */
@@ -354,10 +354,10 @@ p {
 
 
 .slick-next:hover {
-    color: #B11226;  /* 버튼 색상 (흰색) */
+    color: #ffffff;  /* 버튼 색상 (흰색) */
 }
 
 /* 네비게이션 바의 CV 항목 스타일링 */
 .cv-item a {
-    color: #B11226; /* 텍스트 색상 설정 */
+    color: #ffffff; /* 텍스트 색상 설정 */
 }
