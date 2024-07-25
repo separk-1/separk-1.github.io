@@ -29,7 +29,7 @@ header p {
 
 .gray-text {
     padding-left: 20ch;
-    color: #7c7c7c;
+    color: #2c2a29;
 }
 
 
@@ -47,7 +47,7 @@ section {
 
 h2 {
     font-size: 1.8em;
-    color: #B11226;
+    color: #888b8d;
 }
 
 h3 {
@@ -69,7 +69,7 @@ a {
   
   /* 링크에 마우스를 올렸을 때 스타일 */
   a:hover {
-    color: #ff5500; /* 강조된 링크 색상 */
+    color: #b11226; /* 강조된 링크 색상 */
   }
   
 
@@ -102,7 +102,7 @@ footer {
 
 
 #navbar {
-    background: linear-gradient(to right, #00274c, #2d4458);
+    /*background: linear-gradient(to right, #00274c, #2d4458);*/
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
     z-index: 1000;
     background-color: #333;
@@ -139,11 +139,11 @@ footer {
 #navbar ul li a:hover {
     /* background-color: #f8f8f8; 호버 시 배경색 */
     /* color: black; 호버 시 글자색 */
-    color: #ffcf01; 
+    color: #b11226; 
 }
 
 #navbar a[href="#introduction"]:hover {
-    color: #ffcf01; 
+    color: #b11226; 
     font-weight: bold;
 }
 
@@ -235,7 +235,7 @@ p {
 
     .gray-text {
         padding-left: 0ch;
-        color: #7c7c7c;
+        color: #888b8d;
         font-size: 0.8rem;
     }
     
@@ -354,10 +354,10 @@ p {
 
 
 .slick-next:hover {
-    color: #ffcf01;  /* 버튼 색상 (흰색) */
+    color: #b11226;  /* 버튼 색상 (흰색) */
 }
 
 /* 네비게이션 바의 CV 항목 스타일링 */
 .cv-item a {
-    color: #ffcf01; /* 텍스트 색상 설정 */
+    color: #b11226; /* 텍스트 색상 설정 */
 }
