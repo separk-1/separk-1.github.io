@@ -106,18 +106,6 @@
     "publications": [
       {
         "authors": [
-          {"name": "Park, S.", "isMainAuthor": true},
-          {"name": "Lee, H."},
-          {"name": "Park, M."},
-          {"name": "Ahn, C. R."}
-        ],
-        "year": "2024",
-        "title": "Human-Independent Activity Recognition in Construction based on Variational Autoencoder and Wearable Motion Sensors",
-        "journal": "Automation in Construction",
-        "status": "In progress"
-      },
-      {
-        "authors": [
           {"name": "Jeong, G."},
           {"name": "Park, S.", "isMainAuthor": true},
           {"name": "Lee, J."},
