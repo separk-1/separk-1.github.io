@@ -258,10 +258,6 @@
       ]
     },
     {
-      "category": "Programming Libraries & Frameworks",
-      "items": ["Numpy", "Pandas", "Tensorflow", "Pytorch"]
-    },
-    {
       "category": "Software & Tools",
       "items": [
         "Neo4j",
