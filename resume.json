@@ -8,7 +8,7 @@
     "image": "images/profile.jpg",
     "email": "seongeup@andrew.cmu.edu",
     "phone": "+1-412-844-0214",
-    "interest": "Construction Safety, Human-Robot Interaction, Knowledge Transfer, Domain Adaptation, Generative AI",
+    "interest": "Knowledge Reuse and Integration, Adaptive Risk Management, Human-Computer Interaction, Generative AI",
     "profiles": [
       {
         "network": "Email",
@@ -264,23 +264,25 @@
     {
       "category": "Software & Tools",
       "items": [
+        "Neo4j",
         "Tableau",
         "LaTeX",
         "Vensim",
         "AnyLogic",
         "Git",
-        "Linux",
         "SPSS",
+        "RapidMiner",
         "Scan-to-BIM"
       ]
     },
     {
       "category": "Deep Learning",
-      "items": [
-        "Wearable Sensor-based Activity Recognition",
-        "Computer Vision (Object Detection, Depth Estimation, Pose Estimation)",
-        "Natural Language Processing",
-        "Sound Recognition"
+      "items": ["Retrieval-Augmented Generation (RAG)", 
+      "Knowledge Graphs", 
+      "Large Language Models (LLM)", 
+      "Activity Recognition with Wearable Sensors", 
+      "Computer Vision (Object Detection, Depth Estimation, Pose Estimation)", 
+      "Sound Recognition"
       ]
     },
     {
@@ -313,7 +315,7 @@
       "description": "Compiled a comprehensive dataset using on-site CCTV footage and web-crawled images for detecting suspended objects at construction sites.",
       "duration": {
         "start": "Jan 2023",
-        "end": "Present"
+        "end": "May 2024"
       },
       "sponsor": "Seoul National University",
       "skills": [
@@ -422,7 +424,7 @@
       "course_name": "Teaching Assistant - Architecture and AI",
       "duration": {
         "start": "Mar 2023",
-        "end": "June 2023 (2 semester)"
+        "end": "June 2024 (2 semester)"
       },
       "institution": "Seoul National University",
       "description": "Facilitated hands-on sessions on data preprocessing and machine learning techniques using RapidMiner."
