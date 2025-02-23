@@ -188,7 +188,7 @@ def generate_projects(data):
                 {project['description']}<br>'''
         
         if 'image' in project:
-            html += f'''<img src="{project['image']['src']}" class="{project['image']['class']}" alt="{project['image']['alt']}">'''
+            html += f'''<img src="{project['image']['src']}" class="{project['image']['class']}" alt="{project['image']['alt']}"><br>'''
         
         html += f'''
                 <b>Duration</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{project['duration']['start']} – {project['duration']['end']}<br>'''
