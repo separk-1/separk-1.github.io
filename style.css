@@ -69,7 +69,7 @@ a {
   
   /* 링크에 마우스를 올렸을 때 스타일 */
   a:hover {
-    color: #C41230; /* 강조된 링크 색상 */
+    color: #B11226; /* 강조된 링크 색상 */
   }
   
 
@@ -105,7 +105,7 @@ footer {
     /*background: linear-gradient(to right, #00274c, #2d4458);*/
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
     z-index: 800;
-    background-color: #C41230;
+    background-color: #B11226;
     position: fixed;
     width: 100%;
     height: 60px;
@@ -355,7 +355,7 @@ p {
 }
 
 .slick-next:hover {
-    color: #C41230;  /* 버튼 색상 (흰색) */
+    color: #B11226;  /* 버튼 색상 (흰색) */
 }
 
 /* 네비게이션 바의 CV 항목 스타일링 */

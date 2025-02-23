@@ -246,49 +246,46 @@
     ],
   "skills": [
     {
-      "category": "Programming Experience",
+      "category": "Languages",
       "items": [
-        "Python (8 years)",
-        "HTML/CSS/JavaScript (2 years)",
-        "C/C++ (2 years)",
-        "R (1 year)",
-        "MATLAB (1 year)",
-        "SQL (1 year)",
-        "PHP (1 year)"
+        "Python", 
+        "JavaScript (HTML/CSS)", 
+        "C/C++", 
+        "R", 
+        "SQL"
       ]
     },
     {
-      "category": "Software & Tools",
+      "category": "AI & Machine Learning",
       "items": [
-        "Neo4j",
-        "Tableau",
-        "LaTeX",
-        "Vensim",
-        "AnyLogic",
-        "Git",
-        "SPSS",
-        "RapidMiner",
-        "Scan-to-BIM"
+        "Large Language Models (LLM)", 
+        "Retrieval-Augmented Generation (RAG)", 
+        "Computer Vision (Object Detection, Pose Estimation)", 
+        "Sound Recognition", 
+        "Activity Recognition (Wearable Sensor)", 
+        "Knowledge Graphs", 
+        "Causal Analysis"
       ]
     },
     {
-      "category": "Deep Learning",
-      "items": ["Retrieval-Augmented Generation (RAG)", 
-      "Knowledge Graphs", 
-      "Large Language Models (LLM)", 
-      "Activity Recognition with Wearable Sensors", 
-      "Computer Vision (Object Detection, Depth Estimation, Pose Estimation)", 
-      "Sound Recognition"
+      "category": "Data Processing",
+      "items": [
+        "Web Scraping", 
+        "API Retrieval", 
+        "Data Visualization"
       ]
     },
     {
-      "category": "Data Skills",
+      "category": "Tools",
       "items": [
-        "Data Mining",
-        "Visualization",
-        "Statistical Analysis",
-        "Web Scraping",
-        "API retrieval"
+        "Git", 
+        "Neo4j", 
+        "MySQL", 
+        "RapidMiner", 
+        "Tableau", 
+        "Vensim", 
+        "AnyLogic"
+
       ]
     }
   ],
