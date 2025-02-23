@@ -294,16 +294,17 @@
   ],
   "projects": [
     {
-      "title": "AI Construction Safety Management Platform Development",
-      "description": "Developed an AI model using daily construction work plans to estimate accident likelihood.",
+      "title": "Human Systems Engineering for Safe, Efficient, and Decentralized Remote Operations of Automated Nuclear Microreactors",
+      "description": "Developing RAG and Knowledge Graph-based interfaces for safer remote management of multiple nuclear microreactors.",
       "duration": {
-        "start": "Mar 2023",
+        "start": "Mar 2024",
         "end": "Present"
       },
-      "sponsor": "National Research Foundation of Korea (NRF)",
+      "sponsor": "Pennsylvania Infrastructure Technology Alliance (PITA)",
       "skills": [
-        "Natural Language Processing",
-        "Python"
+        "Retrieval Augmented Generation (RAG)",
+        "Large Language Model (LLMs)",
+        "Knowledge Graph"
       ]
     },
     {
@@ -315,10 +316,20 @@
       },
       "sponsor": "Seoul National University",
       "skills": [
-        "Computer Vision (Object Detection, Depth Estimation)",
-        "Transformers",
-        "Web Scraping",
-        "Python"
+        "Computer Vision",
+        "Web Scraping"
+      ]
+    },
+    {
+      "title": "AI-Based Construction Safety Management Platform with Accident Prediction and Worker Behavior Analysis",
+      "description": "Developed an AI model using daily construction work plans to estimate accident likelihood.",
+      "duration": {
+        "start": "Mar 2023",
+        "end": "Jan 2024"
+      },
+      "sponsor": "National Research Foundation of Korea (NRF)",
+      "skills": [
+        "Large Language Model (LLMs)"
       ]
     },
     {
@@ -330,8 +341,7 @@
       },
       "sponsor": "Seoul National University",
       "skills": [
-        "Deep Learning",
-        "Python"
+        "Computer Vision"
       ],
       "image": {
         "src": "images/AIcenter.png",
@@ -348,9 +358,8 @@
       },
       "sponsor": "Obayashi Corporation",
       "skills": [
-        "Computer Vision (Object Detection)",
-        "Sound Recognition",
-        "Python"
+        "Computer Vision (Object Detection",
+        "Sound Recognition"
       ],
       "image": {
         "src": "images/obayashi.png",
@@ -367,14 +376,8 @@
       },
       "sponsor": "Samsung Electronics Corporation",
       "skills": [
-        "Data Mining",
-        "Visualization",
         "Causal Analysis",
-        "Python",
-        "SQL",
-        "R",
-        "SPSS",
-        "Tableau"
+        "Statistical Analysis"
       ],
       "image": {
         "src": "images/samsung.png",
@@ -383,6 +386,7 @@
       }
     },
     {
+     "_comment": "test",
       "title": "Safety Management Support System for Mid-level Managers at Large Construction Sites",
       "description": "Developed a safety management system using YOLOv3 for human and accident detection, and OpenPose and ST-GCN for posture analysis.",
       "duration": {
@@ -409,21 +413,28 @@
       },
       "sponsor": "National Research Foundation of Korea (NRF)",
       "skills": [
-        "Machine Learning",
-        "Matlab",
-        "Python"
+        "Machine Learning"
       ]
     }
   ],
   "teaching_experience": [
     {
-      "course_name": "Teaching Assistant - Architecture and AI",
+      "course_name": "TBuilding Information Modelling (BIM) for Engineering, Construction, and Facility Management",
+      "duration": {
+        "start": "Jan 2025",
+        "end": "Mar 2025"
+      },
+      "institution": "Carnegie Mellon University",
+      "description": "Conducted hands-on sessions on BIM with Revit."
+    },
+    {
+      "course_name": "Architecture and AI",
       "duration": {
         "start": "Mar 2023",
         "end": "June 2024 (2 semester)"
       },
-      "institution": "Seoul National University",
-      "description": "Facilitated hands-on sessions on data preprocessing and machine learning techniques using RapidMiner."
+      "institution": "Teaching Assistant, Seoul National University",
+      "description": "Led hands-on sessions on data preprocessing and machine learning with RapidMiner."
     }
   ],
   "additional_experience": [
@@ -450,13 +461,17 @@
         },
         {
           "level": "Graduate",
-          "credits": 5,
+          "credits": 9,
           "items": [
             "ICT-Based Smart Architecture",
             "Theory and Lab of IoT, AI, and Big Data",
             "Data Analysis and Visualization",
             "Principles and Application of Data Science",
-            "Machine Learning and Deep Learning for Data Science 1"
+            "Machine Learning and Deep Learning for Data Science 1",
+            "Fundamental Python Prototyping for Infrastructure Systems",
+            "Advanced Python for Infrastructure Systems",
+            "Introduction to Machine Learning",
+            "Generative AI"
           ]
         }
       ]
